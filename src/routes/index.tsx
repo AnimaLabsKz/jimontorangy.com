@@ -7,6 +7,7 @@ import { useLang } from "@/hooks/use-lang";
 import { getDbField } from "@/lib/i18n";
 import heroBrands from "@/assets/hero-brands.png";
 import heroMap from "@/assets/hero-map.png";
+import leaderImg from "@/assets/leader-jimon.png";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -26,10 +27,49 @@ function HomePage() {
       <Hero />
       <Intro />
       <Facts />
+      <Leadership />
       <Directions />
       <NewsSection />
       <CTA />
     </SiteLayout>
+  );
+}
+
+function Leadership() {
+  const { t } = useTranslation();
+  return (
+    <section className="bg-background py-20 md:py-28">
+      <div className="container-app grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="order-2 lg:order-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+            {t("about.leadership_eyebrow")}
+          </p>
+          <h2 className="text-display mt-3 text-3xl font-extrabold text-foreground sm:text-4xl">
+            {t("about.leadership_title")}
+          </h2>
+          <p className="mt-6 text-display text-xl font-semibold leading-snug text-foreground">
+            {t("about.leader_quote")}
+          </p>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            {t("about.leader_bio")}
+          </p>
+          <div className="mt-6">
+            <p className="text-display text-lg font-bold text-foreground">{t("about.leader_name")}</p>
+            <p className="text-sm text-muted-foreground">{t("about.leader_role")}</p>
+          </div>
+        </div>
+        <div className="order-1 lg:order-2">
+          <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-border bg-cream">
+            <img
+              src={leaderImg}
+              alt={t("about.leader_name")}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
