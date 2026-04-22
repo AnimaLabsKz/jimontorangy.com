@@ -9,6 +9,8 @@ import heroBrands from "@/assets/hero-brands.png";
 import heroMap from "@/assets/hero-map.png";
 import heroEnNetwork from "@/assets/hero-en-network.png";
 import heroEnHeritage from "@/assets/hero-en-heritage.png";
+import heroUzNetwork from "@/assets/hero-uz-network.png";
+import heroUzHeritage from "@/assets/hero-uz-heritage.png";
 import leaderImg from "@/assets/leader-jimon.png";
 
 export const Route = createFileRoute("/")({
@@ -77,7 +79,12 @@ function Leadership() {
 
 function Hero() {
   const { lang } = useLang();
-  const slides = lang === "en" ? [heroEnHeritage, heroEnNetwork] : [heroBrands, heroMap];
+  const slides =
+    lang === "en"
+      ? [heroEnHeritage, heroEnNetwork]
+      : lang === "uz"
+        ? [heroUzHeritage, heroUzNetwork]
+        : [heroBrands, heroMap];
   const [active, setActive] = useState(0);
 
   useEffect(() => {
