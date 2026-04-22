@@ -25,6 +25,7 @@ function HomePage() {
   return (
     <SiteLayout>
       <Hero />
+      <Intro />
       <Facts />
       <Directions />
       <NewsSection />
@@ -34,7 +35,6 @@ function HomePage() {
 }
 
 function Hero() {
-  const { t } = useTranslation();
   const slides = [heroImg, heroBrands, heroMap];
   const [active, setActive] = useState(0);
 
@@ -46,24 +46,45 @@ function Hero() {
   }, [slides.length]);
 
   return (
-    <section className="relative overflow-hidden bg-forest text-forest-foreground">
-      {slides.map((src, i) => (
-        <div
-          key={src}
-          className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
-          style={{
-            backgroundImage: `url(${src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: i === active ? 1 : 0,
-          }}
-          aria-hidden
-        />
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-forest/95 via-forest/70 to-forest/10 md:from-forest/90 md:via-forest/55 md:to-transparent" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-t from-forest/60 via-transparent to-transparent" aria-hidden />
+    <section className="relative overflow-hidden bg-forest">
+      <div className="relative h-[55vh] min-h-[360px] w-full md:h-[72vh] md:min-h-[520px]">
+        {slides.map((src, i) => (
+          <div
+            key={src}
+            className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
+            style={{
+              backgroundImage: `url(${src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: i === active ? 1 : 0,
+            }}
+            aria-hidden
+          />
+        ))}
 
-      <div className="container-app relative grid gap-10 py-20 md:grid-cols-5 md:py-28 lg:py-32">
+        <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`h-1.5 rounded-full transition-all ${
+                i === active ? "w-8 bg-gold" : "w-4 bg-cream/60 hover:bg-cream/80"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Intro() {
+  const { t } = useTranslation();
+  return (
+    <section className="bg-forest py-20 text-forest-foreground md:py-28 lg:py-32">
+      <div className="container-app grid gap-10 md:grid-cols-5">
         <div className="md:col-span-3">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold animate-fade-up">
             {t("hero.eyebrow")}
@@ -90,7 +111,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hidden items-center justify-end md:col-span-2 md:flex">
+        <div className="flex items-center justify-start md:col-span-2 md:justify-end">
           <div className="relative w-full max-w-sm rounded-2xl border border-gold/30 bg-gold/10 p-7 backdrop-blur-sm animate-fade-up" style={{ animationDelay: "320ms" }}>
             <Sparkles className="h-8 w-8 text-gold" />
             <p className="mt-4 text-display text-lg font-semibold leading-snug text-cream">
@@ -99,20 +120,6 @@ function Hero() {
             <p className="mt-3 text-sm text-cream/70">JIMON Group · 1992 — {new Date().getFullYear()}</p>
           </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => setActive(i)}
-            aria-label={`Slide ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all ${
-              i === active ? "w-8 bg-gold" : "w-4 bg-cream/40 hover:bg-cream/60"
-            }`}
-          />
-        ))}
       </div>
     </section>
   );
