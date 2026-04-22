@@ -38,7 +38,6 @@ function HomePage() {
       <Leadership />
       <Directions />
       <NewsSection />
-      <CTA />
     </SiteLayout>
   );
 }
@@ -347,22 +346,3 @@ function NewsSection() {
   );
 }
 
-function CTA() {
-  const { t } = useTranslation();
-  return (
-    <section className="bg-forest py-20 text-forest-foreground md:py-24">
-      <div className="container-app flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-        <div className="max-w-xl">
-          <h2 className="text-display text-3xl font-extrabold sm:text-4xl">{t("contact.title")}</h2>
-          <p className="mt-3 text-base text-cream/80">{t("contact.subtitle")}</p>
-        </div>
-        <Link
-          to="/contact"
-          className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-gold-foreground transition-transform hover:scale-[1.02]"
-        >
-          {t("contact.form_submit")} <ArrowRight className="h-4 w-4" />
-        </Link>
-      </div>
-    </section>
-  );
-}

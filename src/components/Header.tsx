@@ -17,7 +17,6 @@ export function Header() {
     { to: "/brands" as const, label: t("nav.brands") },
     { to: "/products" as const, label: t("nav.products") },
     { to: "/news" as const, label: t("nav.news") },
-    { to: "/contact" as const, label: t("nav.contact") },
   ];
 
   return (
