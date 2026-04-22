@@ -93,7 +93,8 @@ function Hero() {
             className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
             style={{
               backgroundImage: `url(${src})`,
-              backgroundSize: "cover",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               opacity: i === active ? 1 : 0,
             }}
