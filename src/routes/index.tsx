@@ -5,7 +5,6 @@ import { ArrowRight, Award, Sparkles, Globe2, FlaskConical, Heart, Leaf, Chevron
 import { SiteLayout } from "@/components/SiteLayout";
 import { useLang } from "@/hooks/use-lang";
 import { getDbField } from "@/lib/i18n";
-import heroImg from "@/assets/hero-jimon.jpg";
 import heroBrands from "@/assets/hero-brands.png";
 import heroMap from "@/assets/hero-map.png";
 
@@ -35,7 +34,7 @@ function HomePage() {
 }
 
 function Hero() {
-  const slides = [heroImg, heroBrands, heroMap];
+  const slides = [heroBrands, heroMap];
   const [active, setActive] = useState(0);
 
   useEffect(() => {
