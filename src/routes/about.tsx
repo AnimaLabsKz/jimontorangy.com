@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { SiteLayout } from "@/components/SiteLayout";
 import aboutImg from "@/assets/about-jimon.jpg";
+import leaderImg from "@/assets/leader-jimon.png";
 import { CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -77,6 +78,51 @@ function AboutPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-20 md:py-24">
+        <div className="container-app">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+              {t("about.leadership_eyebrow")}
+            </p>
+            <h2 className="text-display mt-3 text-3xl font-extrabold text-foreground sm:text-4xl">
+              {t("about.leadership_title")}
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
+            <div className="mx-auto lg:mx-0">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-gold/30 to-forest/20 blur-xl" />
+                <img
+                  src={leaderImg}
+                  alt={t("about.leader_name")}
+                  width={520}
+                  height={520}
+                  loading="lazy"
+                  className="relative h-64 w-64 rounded-full border-4 border-cream object-cover shadow-xl sm:h-80 sm:w-80"
+                />
+              </div>
+            </div>
+
+            <div className="lg:pt-6">
+              <h3 className="text-display text-2xl font-extrabold text-foreground sm:text-3xl">
+                {t("about.leader_name")}
+              </h3>
+              <p className="mt-1 text-base font-medium text-primary">
+                {t("about.leader_role")}
+              </p>
+              <div className="mt-5 h-1 w-16 rounded-full bg-gold" />
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                {t("about.leader_quote")}
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                {t("about.leader_bio")}
+              </p>
+            </div>
           </div>
         </div>
       </section>
