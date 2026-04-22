@@ -82,7 +82,7 @@ function Hero() {
 function Intro() {
   const { t } = useTranslation();
   return (
-    <section className="bg-forest py-20 text-forest-foreground md:py-28 lg:py-32">
+    <section className="bg-forest py-10 text-forest-foreground md:py-14">
       <div className="container-app grid gap-10 md:grid-cols-5">
         <div className="md:col-span-3">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold animate-fade-up">
