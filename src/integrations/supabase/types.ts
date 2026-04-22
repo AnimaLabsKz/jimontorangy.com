@@ -14,6 +14,93 @@ export type Database = {
   }
   public: {
     Tables: {
+      brands: {
+        Row: {
+          created_at: string
+          description_en: string
+          description_kg: string
+          description_kz: string
+          description_ru: string
+          description_uz: string
+          id: string
+          logo_url: string | null
+          name_en: string
+          name_kg: string
+          name_kz: string
+          name_ru: string
+          name_uz: string
+          position: number
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description_en?: string
+          description_kg?: string
+          description_kz?: string
+          description_ru?: string
+          description_uz?: string
+          id?: string
+          logo_url?: string | null
+          name_en?: string
+          name_kg?: string
+          name_kz?: string
+          name_ru?: string
+          name_uz?: string
+          position?: number
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description_en?: string
+          description_kg?: string
+          description_kz?: string
+          description_ru?: string
+          description_uz?: string
+          id?: string
+          logo_url?: string | null
+          name_en?: string
+          name_kg?: string
+          name_kz?: string
+          name_ru?: string
+          name_uz?: string
+          position?: number
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      contact_messages: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          is_handled: boolean
+          message: string
+          name: string
+          phone: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          is_handled?: boolean
+          message: string
+          name: string
+          phone?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          is_handled?: boolean
+          message?: string
+          name?: string
+          phone?: string | null
+        }
+        Relationships: []
+      }
       habit_logs: {
         Row: {
           created_at: string
@@ -82,6 +169,129 @@ export type Database = {
         }
         Relationships: []
       }
+      news: {
+        Row: {
+          body_en: string
+          body_kg: string
+          body_kz: string
+          body_ru: string
+          body_uz: string
+          cover_url: string | null
+          created_at: string
+          excerpt_ru: string
+          id: string
+          is_published: boolean
+          published_at: string | null
+          slug: string
+          title_en: string
+          title_kg: string
+          title_kz: string
+          title_ru: string
+          title_uz: string
+          updated_at: string
+        }
+        Insert: {
+          body_en?: string
+          body_kg?: string
+          body_kz?: string
+          body_ru?: string
+          body_uz?: string
+          cover_url?: string | null
+          created_at?: string
+          excerpt_ru?: string
+          id?: string
+          is_published?: boolean
+          published_at?: string | null
+          slug: string
+          title_en?: string
+          title_kg?: string
+          title_kz?: string
+          title_ru?: string
+          title_uz?: string
+          updated_at?: string
+        }
+        Update: {
+          body_en?: string
+          body_kg?: string
+          body_kz?: string
+          body_ru?: string
+          body_uz?: string
+          cover_url?: string | null
+          created_at?: string
+          excerpt_ru?: string
+          id?: string
+          is_published?: boolean
+          published_at?: string | null
+          slug?: string
+          title_en?: string
+          title_kg?: string
+          title_kz?: string
+          title_ru?: string
+          title_uz?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      products: {
+        Row: {
+          category: string
+          created_at: string
+          description_en: string
+          description_kg: string
+          description_kz: string
+          description_ru: string
+          description_uz: string
+          id: string
+          image_url: string | null
+          name_en: string
+          name_kg: string
+          name_kz: string
+          name_ru: string
+          name_uz: string
+          position: number
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          category?: string
+          created_at?: string
+          description_en?: string
+          description_kg?: string
+          description_kz?: string
+          description_ru?: string
+          description_uz?: string
+          id?: string
+          image_url?: string | null
+          name_en?: string
+          name_kg?: string
+          name_kz?: string
+          name_ru?: string
+          name_uz?: string
+          position?: number
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          description_en?: string
+          description_kg?: string
+          description_kz?: string
+          description_ru?: string
+          description_uz?: string
+          id?: string
+          image_url?: string | null
+          name_en?: string
+          name_kg?: string
+          name_kz?: string
+          name_ru?: string
+          name_uz?: string
+          position?: number
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -103,15 +313,75 @@ export type Database = {
         }
         Relationships: []
       }
+      translations: {
+        Row: {
+          en: string
+          id: string
+          key: string
+          kg: string
+          kz: string
+          ru: string
+          updated_at: string
+          uz: string
+        }
+        Insert: {
+          en?: string
+          id?: string
+          key: string
+          kg?: string
+          kz?: string
+          ru?: string
+          updated_at?: string
+          uz?: string
+        }
+        Update: {
+          en?: string
+          id?: string
+          key?: string
+          kg?: string
+          kz?: string
+          ru?: string
+          updated_at?: string
+          uz?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -238,6 +508,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin"],
+    },
   },
 } as const
