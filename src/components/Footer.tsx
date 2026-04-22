@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Leaf, MapPin, Mail } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
+import jimonLogo from "@/assets/jimon-logo.png";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -11,13 +12,14 @@ export function Footer() {
       <div className="container-app py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gold text-gold-foreground">
-                <Leaf className="h-5 w-5" strokeWidth={2.2} />
-              </span>
-              <span className="text-display text-lg font-extrabold tracking-tight">
-                {t("brand.name")}
-              </span>
+            <div className="inline-flex items-center rounded-lg bg-cream/95 px-4 py-3 shadow-sm">
+              <img
+                src={jimonLogo}
+                alt={t("brand.name")}
+                width={520}
+                height={140}
+                className="h-10 w-auto"
+              />
             </div>
             <p className="mt-4 max-w-xs text-sm text-cream/70">{t("brand.tagline")}</p>
           </div>

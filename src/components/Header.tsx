@@ -1,9 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { LangSwitcher } from "./LangSwitcher";
 import { useIsAdmin } from "@/hooks/use-is-admin";
+import jimonLogo from "@/assets/jimon-logo.png";
 
 export function Header() {
   const { t } = useTranslation();
@@ -22,13 +23,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container-app flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <Leaf className="h-5 w-5" strokeWidth={2.2} />
-          </span>
-          <span className="text-display text-lg font-extrabold tracking-tight text-foreground md:text-xl">
-            {t("brand.name")}
-          </span>
+        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)} aria-label={t("brand.name")}>
+          <img
+            src={jimonLogo}
+            alt={t("brand.name")}
+            width={520}
+            height={140}
+            className="h-9 w-auto md:h-11"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
