@@ -22,14 +22,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="container-app flex h-20 items-center justify-between gap-4 md:h-28">
+      <div className="container-app flex h-24 items-center justify-between gap-4 md:h-36">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)} aria-label={t("brand.name")}>
           <img
             src={jimonLogo}
             alt={t("brand.name")}
             width={520}
             height={140}
-            className="h-14 w-auto md:h-20"
+            className="h-16 w-auto md:h-28"
           />
         </Link>
 
