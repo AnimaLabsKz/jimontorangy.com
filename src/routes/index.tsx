@@ -11,6 +11,8 @@ import heroEnNetwork from "@/assets/hero-en-network.png";
 import heroEnHeritage from "@/assets/hero-en-heritage.png";
 import heroUzNetwork from "@/assets/hero-uz-network.png";
 import heroUzHeritage from "@/assets/hero-uz-heritage.png";
+import heroKgNetwork from "@/assets/hero-kg-network.png";
+import heroKgHeritage from "@/assets/hero-kg-heritage.png";
 import leaderImg from "@/assets/leader-jimon.png";
 
 export const Route = createFileRoute("/")({
@@ -84,7 +86,9 @@ function Hero() {
       ? [heroEnHeritage, heroEnNetwork]
       : lang === "uz"
         ? [heroUzHeritage, heroUzNetwork]
-        : [heroBrands, heroMap];
+        : lang === "kg"
+          ? [heroKgHeritage, heroKgNetwork]
+          : [heroBrands, heroMap];
   const [active, setActive] = useState(0);
 
   useEffect(() => {
