@@ -7,6 +7,8 @@ import { useLang } from "@/hooks/use-lang";
 import { getDbField } from "@/lib/i18n";
 import heroBrands from "@/assets/hero-brands.png";
 import heroMap from "@/assets/hero-map.png";
+import heroEnNetwork from "@/assets/hero-en-network.png";
+import heroEnHeritage from "@/assets/hero-en-heritage.png";
 import leaderImg from "@/assets/leader-jimon.png";
 
 export const Route = createFileRoute("/")({
@@ -74,7 +76,8 @@ function Leadership() {
 }
 
 function Hero() {
-  const slides = [heroBrands, heroMap];
+  const { lang } = useLang();
+  const slides = lang === "en" ? [heroEnHeritage, heroEnNetwork] : [heroBrands, heroMap];
   const [active, setActive] = useState(0);
 
   useEffect(() => {
