@@ -241,12 +241,10 @@ function Directions() {
         </div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {items.map(({ key, icon: Icon }, i) => (
+          {items.map(({ key, icon: Icon }) => (
             <article
               key={key}
-              className={`group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl ${
-                i === 0 ? "lg:col-span-1" : ""
-              }`}
+              className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-md bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <Icon className="h-6 w-6" strokeWidth={2} />
