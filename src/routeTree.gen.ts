@@ -13,10 +13,17 @@ import { Route as ProductsRouteImport } from './routes/products'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BrandsRouteImport } from './routes/brands'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NewsIndexRouteImport } from './routes/news.index'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as NewsSlugRouteImport } from './routes/news.$slug'
+import { Route as AdminTranslationsRouteImport } from './routes/admin.translations'
+import { Route as AdminProductsRouteImport } from './routes/admin.products'
+import { Route as AdminMessagesRouteImport } from './routes/admin.messages'
+import { Route as AdminHelpRouteImport } from './routes/admin.help'
+import { Route as AdminBrandsRouteImport } from './routes/admin.brands'
 
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
@@ -38,6 +45,11 @@ const BrandsRoute = BrandsRouteImport.update({
   path: '/brands',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -53,20 +65,57 @@ const NewsIndexRoute = NewsIndexRouteImport.update({
   path: '/news/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
+} as any)
 const NewsSlugRoute = NewsSlugRouteImport.update({
   id: '/news/$slug',
   path: '/news/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminTranslationsRoute = AdminTranslationsRouteImport.update({
+  id: '/translations',
+  path: '/translations',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminProductsRoute = AdminProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminMessagesRoute = AdminMessagesRouteImport.update({
+  id: '/messages',
+  path: '/messages',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminHelpRoute = AdminHelpRouteImport.update({
+  id: '/help',
+  path: '/help',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminBrandsRoute = AdminBrandsRouteImport.update({
+  id: '/brands',
+  path: '/brands',
+  getParentRoute: () => AdminRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/admin': typeof AdminRouteWithChildren
   '/brands': typeof BrandsRoute
   '/contact': typeof ContactRoute
   '/login': typeof LoginRoute
   '/products': typeof ProductsRoute
+  '/admin/brands': typeof AdminBrandsRoute
+  '/admin/help': typeof AdminHelpRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/products': typeof AdminProductsRoute
+  '/admin/translations': typeof AdminTranslationsRoute
   '/news/$slug': typeof NewsSlugRoute
+  '/admin/': typeof AdminIndexRoute
   '/news/': typeof NewsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -76,18 +125,31 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/login': typeof LoginRoute
   '/products': typeof ProductsRoute
+  '/admin/brands': typeof AdminBrandsRoute
+  '/admin/help': typeof AdminHelpRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/products': typeof AdminProductsRoute
+  '/admin/translations': typeof AdminTranslationsRoute
   '/news/$slug': typeof NewsSlugRoute
+  '/admin': typeof AdminIndexRoute
   '/news': typeof NewsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/admin': typeof AdminRouteWithChildren
   '/brands': typeof BrandsRoute
   '/contact': typeof ContactRoute
   '/login': typeof LoginRoute
   '/products': typeof ProductsRoute
+  '/admin/brands': typeof AdminBrandsRoute
+  '/admin/help': typeof AdminHelpRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/products': typeof AdminProductsRoute
+  '/admin/translations': typeof AdminTranslationsRoute
   '/news/$slug': typeof NewsSlugRoute
+  '/admin/': typeof AdminIndexRoute
   '/news/': typeof NewsIndexRoute
 }
 export interface FileRouteTypes {
@@ -95,11 +157,18 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/admin'
     | '/brands'
     | '/contact'
     | '/login'
     | '/products'
+    | '/admin/brands'
+    | '/admin/help'
+    | '/admin/messages'
+    | '/admin/products'
+    | '/admin/translations'
     | '/news/$slug'
+    | '/admin/'
     | '/news/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -109,23 +178,37 @@ export interface FileRouteTypes {
     | '/contact'
     | '/login'
     | '/products'
+    | '/admin/brands'
+    | '/admin/help'
+    | '/admin/messages'
+    | '/admin/products'
+    | '/admin/translations'
     | '/news/$slug'
+    | '/admin'
     | '/news'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/admin'
     | '/brands'
     | '/contact'
     | '/login'
     | '/products'
+    | '/admin/brands'
+    | '/admin/help'
+    | '/admin/messages'
+    | '/admin/products'
+    | '/admin/translations'
     | '/news/$slug'
+    | '/admin/'
     | '/news/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AdminRoute: typeof AdminRouteWithChildren
   BrandsRoute: typeof BrandsRoute
   ContactRoute: typeof ContactRoute
   LoginRoute: typeof LoginRoute
@@ -164,6 +247,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BrandsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -185,6 +275,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/news/$slug': {
       id: '/news/$slug'
       path: '/news/$slug'
@@ -192,12 +289,68 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/translations': {
+      id: '/admin/translations'
+      path: '/translations'
+      fullPath: '/admin/translations'
+      preLoaderRoute: typeof AdminTranslationsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/products': {
+      id: '/admin/products'
+      path: '/products'
+      fullPath: '/admin/products'
+      preLoaderRoute: typeof AdminProductsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/messages': {
+      id: '/admin/messages'
+      path: '/messages'
+      fullPath: '/admin/messages'
+      preLoaderRoute: typeof AdminMessagesRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/help': {
+      id: '/admin/help'
+      path: '/help'
+      fullPath: '/admin/help'
+      preLoaderRoute: typeof AdminHelpRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/brands': {
+      id: '/admin/brands'
+      path: '/brands'
+      fullPath: '/admin/brands'
+      preLoaderRoute: typeof AdminBrandsRouteImport
+      parentRoute: typeof AdminRoute
+    }
   }
 }
+
+interface AdminRouteChildren {
+  AdminBrandsRoute: typeof AdminBrandsRoute
+  AdminHelpRoute: typeof AdminHelpRoute
+  AdminMessagesRoute: typeof AdminMessagesRoute
+  AdminProductsRoute: typeof AdminProductsRoute
+  AdminTranslationsRoute: typeof AdminTranslationsRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminBrandsRoute: AdminBrandsRoute,
+  AdminHelpRoute: AdminHelpRoute,
+  AdminMessagesRoute: AdminMessagesRoute,
+  AdminProductsRoute: AdminProductsRoute,
+  AdminTranslationsRoute: AdminTranslationsRoute,
+  AdminIndexRoute: AdminIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AdminRoute: AdminRouteWithChildren,
   BrandsRoute: BrandsRoute,
   ContactRoute: ContactRoute,
   LoginRoute: LoginRoute,
