@@ -6,6 +6,8 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { useLang } from "@/hooks/use-lang";
 import { getDbField } from "@/lib/i18n";
 import heroImg from "@/assets/hero-jimon.jpg";
+import heroBrands from "@/assets/hero-brands.png";
+import heroMap from "@/assets/hero-map.png";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -33,13 +35,31 @@ function HomePage() {
 
 function Hero() {
   const { t } = useTranslation();
+  const slides = [heroImg, heroBrands, heroMap];
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActive((i) => (i + 1) % slides.length);
+    }, 10000);
+    return () => clearInterval(id);
+  }, [slides.length]);
+
   return (
     <section className="relative overflow-hidden bg-forest text-forest-foreground">
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
-        aria-hidden
-      />
+      {slides.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
+          style={{
+            backgroundImage: `url(${src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: i === active ? 0.55 : 0,
+          }}
+          aria-hidden
+        />
+      ))}
       <div className="absolute inset-0 bg-gradient-to-r from-forest via-forest/85 to-forest/40" aria-hidden />
 
       <div className="container-app relative grid gap-10 py-20 md:grid-cols-5 md:py-28 lg:py-32">
@@ -78,6 +98,20 @@ function Hero() {
             <p className="mt-3 text-sm text-cream/70">JIMON Group · 1992 — {new Date().getFullYear()}</p>
           </div>
         </div>
+      </div>
+
+      <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setActive(i)}
+            aria-label={`Slide ${i + 1}`}
+            className={`h-1.5 rounded-full transition-all ${
+              i === active ? "w-8 bg-gold" : "w-4 bg-cream/40 hover:bg-cream/60"
+            }`}
+          />
+        ))}
       </div>
     </section>
   );
