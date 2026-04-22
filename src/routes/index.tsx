@@ -55,12 +55,13 @@ function Hero() {
             backgroundImage: `url(${src})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: i === active ? 0.55 : 0,
+            opacity: i === active ? 1 : 0,
           }}
           aria-hidden
         />
       ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-forest via-forest/85 to-forest/40" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-r from-forest/95 via-forest/70 to-forest/10 md:from-forest/90 md:via-forest/55 md:to-transparent" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-t from-forest/60 via-transparent to-transparent" aria-hidden />
 
       <div className="container-app relative grid gap-10 py-20 md:grid-cols-5 md:py-28 lg:py-32">
         <div className="md:col-span-3">
