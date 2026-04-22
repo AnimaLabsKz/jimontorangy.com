@@ -18,7 +18,7 @@ export function Footer() {
                 alt={t("brand.name")}
                 width={520}
                 height={140}
-                className="h-10 w-auto"
+                className="h-16 w-auto md:h-20"
               />
             </div>
             <p className="mt-4 max-w-xs text-sm text-cream/70">{t("brand.tagline")}</p>
