@@ -14,12 +14,21 @@ export function useLang(): { lang: Lang; setLang: (l: Lang) => void } {
   });
 
   useEffect(() => {
+    const saved = typeof window !== "undefined" ? window.localStorage.getItem("jimon_lang") : null;
+    const savedShort = saved?.slice(0, 2).toLowerCase();
+    if (savedShort && (SUPPORTED_LANGS as readonly string[]).includes(savedShort) && savedShort !== i18n.language) {
+      i18n.changeLanguage(savedShort);
+    }
+
     const onChange = (l: string) => {
       const short = l.slice(0, 2).toLowerCase();
       if ((SUPPORTED_LANGS as readonly string[]).includes(short)) {
         setLangState(short as Lang);
         if (typeof document !== "undefined") {
           document.documentElement.setAttribute("lang", short);
+        }
+        if (typeof window !== "undefined") {
+          window.localStorage.setItem("jimon_lang", short);
         }
       }
     };
