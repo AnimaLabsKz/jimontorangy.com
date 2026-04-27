@@ -1,7 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, Award, Sparkles, Globe2, FlaskConical, Heart, Leaf, ChevronRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Award, Sparkles, Globe2, FlaskConical, Heart, Leaf, CheckCircle2 } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { useLang } from "@/hooks/use-lang";
 import { getDbField } from "@/lib/i18n";
@@ -41,7 +41,6 @@ function HomePage() {
       <BrandsSection />
       <ProductsSection />
       <Directions />
-      <NewsSection />
     </SiteLayout>
   );
 }
