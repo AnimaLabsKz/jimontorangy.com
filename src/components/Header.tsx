@@ -3,13 +3,11 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
 import { LangSwitcher } from "./LangSwitcher";
-import { useIsAdmin } from "@/hooks/use-is-admin";
 import jimonLogo from "@/assets/jimon-logo.png";
 
 export function Header() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
-  const { isAdmin } = useIsAdmin();
 
   const anchorItems = [
     { hash: "about", label: t("nav.about") },
@@ -60,32 +58,10 @@ export function Header() {
               {item.label}
             </a>
           ))}
-          <Link
-            to="/news"
-            className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-muted hover:text-primary"
-            activeProps={{ className: "rounded-md px-3 py-2 text-sm font-semibold text-primary bg-muted" }}
-          >
-            {t("nav.news")}
-          </Link>
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
           <LangSwitcher />
-          {isAdmin ? (
-            <Link
-              to="/admin"
-              className="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              {t("nav.admin")}
-            </Link>
-          ) : (
-            <Link
-              to="/login"
-              className="rounded-md border border-border px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-            >
-              {t("nav.login")}
-            </Link>
-          )}
         </div>
 
         <button
@@ -119,33 +95,8 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <Link
-              to="/news"
-              onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-muted"
-              activeProps={{ className: "rounded-md px-3 py-3 text-base font-semibold text-primary bg-muted" }}
-            >
-              {t("nav.news")}
-            </Link>
             <div className="mt-3 flex items-center justify-between border-t border-border pt-4">
               <LangSwitcher />
-              {isAdmin ? (
-                <Link
-                  to="/admin"
-                  onClick={() => setOpen(false)}
-                  className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
-                >
-                  {t("nav.admin")}
-                </Link>
-              ) : (
-                <Link
-                  to="/login"
-                  onClick={() => setOpen(false)}
-                  className="rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground"
-                >
-                  {t("nav.login")}
-                </Link>
-              )}
             </div>
           </div>
         </div>
