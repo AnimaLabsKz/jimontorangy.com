@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { MapPin, Mail } from "lucide-react";
 import jimonLogo from "@/assets/jimon-logo.png";
@@ -32,7 +31,6 @@ export function Footer() {
               <li><a href="/#about" className="text-cream/80 transition-colors hover:text-gold">{t("nav.about")}</a></li>
               <li><a href="/#brands" className="text-cream/80 transition-colors hover:text-gold">{t("nav.brands")}</a></li>
               <li><a href="/#products" className="text-cream/80 transition-colors hover:text-gold">{t("nav.products")}</a></li>
-              <li><Link to="/news" className="text-cream/80 transition-colors hover:text-gold">{t("nav.news")}</Link></li>
             </ul>
           </div>
 
