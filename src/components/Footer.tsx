@@ -29,9 +29,9 @@ export function Footer() {
               {t("footer.links_title")}
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/about" className="text-cream/80 transition-colors hover:text-gold">{t("nav.about")}</Link></li>
-              <li><Link to="/brands" className="text-cream/80 transition-colors hover:text-gold">{t("nav.brands")}</Link></li>
-              <li><Link to="/products" className="text-cream/80 transition-colors hover:text-gold">{t("nav.products")}</Link></li>
+              <li><a href="/#about" className="text-cream/80 transition-colors hover:text-gold">{t("nav.about")}</a></li>
+              <li><a href="/#brands" className="text-cream/80 transition-colors hover:text-gold">{t("nav.brands")}</a></li>
+              <li><a href="/#products" className="text-cream/80 transition-colors hover:text-gold">{t("nav.products")}</a></li>
               <li><Link to="/news" className="text-cream/80 transition-colors hover:text-gold">{t("nav.news")}</Link></li>
             </ul>
           </div>
