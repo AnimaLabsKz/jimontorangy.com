@@ -32,13 +32,14 @@ if (!i18n.isInitialized) {
         kg: { common: kg },
       },
       fallbackLng: "ru",
+      lng: "ru",
       defaultNS: "common",
       supportedLngs: SUPPORTED_LANGS as unknown as string[],
       interpolation: { escapeValue: false },
       detection: {
-        order: ["localStorage", "navigator"],
+        order: [],
         lookupLocalStorage: "jimon_lang",
-        caches: ["localStorage"],
+        caches: [],
       },
       react: { useSuspense: false },
     });
