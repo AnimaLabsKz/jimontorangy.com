@@ -25,17 +25,6 @@ export function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
-              {t("footer.links_title")}
-            </h3>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="/#about" className="text-cream/80 transition-colors hover:text-gold">{t("nav.about")}</a></li>
-              <li><a href="/#brands" className="text-cream/80 transition-colors hover:text-gold">{t("nav.brands")}</a></li>
-              <li><a href="/#products" className="text-cream/80 transition-colors hover:text-gold">{t("nav.products")}</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               {t("footer.contacts_title")}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-cream/80">
