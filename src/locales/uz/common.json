@@ -31,7 +31,7 @@
   "products": { "title": "Mahsulotlar", "subtitle": "Uch yoʻnalish — dorivor preparatlardan kundalik kosmetikagacha", "categories": { "all": "Barchasi", "medicine": "Dorivor preparatlar", "supplements": "BAQ va ichimliklar", "cosmetics": "Kosmetika" }, "empty": "Mahsulotlar katalogi toʻldirilmoqda" },
   "contact": {
     "title": "Aloqa", "subtitle": "Qozogʻistondagi bizning jamoamiz bilan bogʻlaning",
-    "address_label": "Manzil", "address_value": "Olmaota sh., Daraboz koʻch., 49-37",
+    "address_label": "Manzil", "address_value": "Olmaota sh., Daraboz mavzesi, 49-uy, 37-ofis",
     "phone_label": "Telefon", "email_label": "E-mail", "form_title": "Bizga yozing", "form_name": "Ismingiz", "form_email": "E-mail", "form_phone": "Telefon (ixtiyoriy)", "form_message": "Xabar", "form_submit": "Yuborish",
     "form_success": "Rahmat! Tez orada siz bilan bogʻlanamiz.", "form_error": "Xabarni yuborib boʻlmadi. Qaytadan urining."
   },

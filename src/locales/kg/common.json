@@ -31,7 +31,7 @@
   "products": { "title": "Продукция", "subtitle": "Үч багыт — дары-дармектерден күнүмдүк косметикага чейин", "categories": { "all": "Баары", "medicine": "Дары-дармектер", "supplements": "БАК жана суусундуктар", "cosmetics": "Косметика" }, "empty": "Продукциянын каталогу толукталууда" },
   "contact": {
     "title": "Байланыш", "subtitle": "Казакстандагы биздин команда менен байланышыңыз",
-    "address_label": "Дарек", "address_value": "Алматы ш., Дарабоз көч., 49-37", "phone_label": "Телефон", "email_label": "E-mail",
+    "address_label": "Дарек", "address_value": "Алматы ш., Дарабоз кичи району, 49-үй, 37-кеңсе", "phone_label": "Телефон", "email_label": "E-mail",
     "form_title": "Бизге жазыңыз", "form_name": "Атыңыз", "form_email": "E-mail", "form_phone": "Телефон (милдеттүү эмес)", "form_message": "Билдирүү", "form_submit": "Жөнөтүү",
     "form_success": "Рахмат! Жакында сиз менен байланышабыз.", "form_error": "Билдирүүнү жөнөтүү мүмкүн болбоду. Кайра аракет кылыңыз."
   },
