@@ -1,20 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "@tanstack/react-router";
 import { MapPin, Mail } from "lucide-react";
 import jimonLogo from "@/assets/jimon-logo.png";
 
 export function Footer() {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
-  const links = [
-    { to: "/about", label: t("nav.about") },
-    { to: "/brands", label: t("nav.brands") },
-    { to: "/layout", label: "规划布局" },
-    { to: "/products", label: t("nav.products") },
-    { to: "/news", label: t("nav.news") },
-    { to: "/membership", label: "会员注册" },
-    { to: "/legal", label: "法律声明" },
-  ] as const;
 
   return (
     <footer className="bg-forest text-forest-foreground">
@@ -51,25 +41,12 @@ export function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
-              {t("footer.links_title")}
-            </h3>
-            <ul className="mt-4 space-y-2 text-sm text-cream/70">
-              {links.map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="transition-colors hover:text-gold">{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               {t("footer.legal_title")}
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-cream/70">
               <li>{t("footer.company")}</li>
-              <li>БСН/БИН: 250540014840</li>
-              <li>ИИК: KZ48722S000052175278</li>
+              <li>БИН: 230440013517</li>
+              <li>ИИК: KZ80722S000026938093</li>
               <li>АО «Kaspi Bank»</li>
               <li>БИК: CASPKZKA</li>
             </ul>

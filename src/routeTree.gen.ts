@@ -9,17 +9,8 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ProductsRouteImport } from './routes/products'
-import { Route as NewsRouteImport } from './routes/news'
-import { Route as MembershipRouteImport } from './routes/membership'
-import { Route as MediaRouteImport } from './routes/media'
 import { Route as LoginRouteImport } from './routes/login'
-import { Route as LegalRouteImport } from './routes/legal'
-import { Route as LayoutRouteImport } from './routes/layout'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as BrandsRouteImport } from './routes/brands'
 import { Route as AdminRouteImport } from './routes/admin'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as AdminTranslationsRouteImport } from './routes/admin.translations'
@@ -28,59 +19,14 @@ import { Route as AdminMessagesRouteImport } from './routes/admin.messages'
 import { Route as AdminHelpRouteImport } from './routes/admin.help'
 import { Route as AdminBrandsRouteImport } from './routes/admin.brands'
 
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NewsRoute = NewsRouteImport.update({
-  id: '/news',
-  path: '/news',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MembershipRoute = MembershipRouteImport.update({
-  id: '/membership',
-  path: '/membership',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MediaRoute = MediaRouteImport.update({
-  id: '/media',
-  path: '/media',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
   path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LegalRoute = LegalRouteImport.update({
-  id: '/legal',
-  path: '/legal',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LayoutRoute = LayoutRouteImport.update({
-  id: '/layout',
-  path: '/layout',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BrandsRoute = BrandsRouteImport.update({
-  id: '/brands',
-  path: '/brands',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AdminRoute = AdminRouteImport.update({
   id: '/admin',
   path: '/admin',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -121,17 +67,8 @@ const AdminBrandsRoute = AdminBrandsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/admin': typeof AdminRouteWithChildren
-  '/brands': typeof BrandsRoute
-  '/contact': typeof ContactRoute
-  '/layout': typeof LayoutRoute
-  '/legal': typeof LegalRoute
   '/login': typeof LoginRoute
-  '/media': typeof MediaRoute
-  '/membership': typeof MembershipRoute
-  '/news': typeof NewsRoute
-  '/products': typeof ProductsRoute
   '/admin/brands': typeof AdminBrandsRoute
   '/admin/help': typeof AdminHelpRoute
   '/admin/messages': typeof AdminMessagesRoute
@@ -141,16 +78,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/brands': typeof BrandsRoute
-  '/contact': typeof ContactRoute
-  '/layout': typeof LayoutRoute
-  '/legal': typeof LegalRoute
   '/login': typeof LoginRoute
-  '/media': typeof MediaRoute
-  '/membership': typeof MembershipRoute
-  '/news': typeof NewsRoute
-  '/products': typeof ProductsRoute
   '/admin/brands': typeof AdminBrandsRoute
   '/admin/help': typeof AdminHelpRoute
   '/admin/messages': typeof AdminMessagesRoute
@@ -161,17 +89,8 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/admin': typeof AdminRouteWithChildren
-  '/brands': typeof BrandsRoute
-  '/contact': typeof ContactRoute
-  '/layout': typeof LayoutRoute
-  '/legal': typeof LegalRoute
   '/login': typeof LoginRoute
-  '/media': typeof MediaRoute
-  '/membership': typeof MembershipRoute
-  '/news': typeof NewsRoute
-  '/products': typeof ProductsRoute
   '/admin/brands': typeof AdminBrandsRoute
   '/admin/help': typeof AdminHelpRoute
   '/admin/messages': typeof AdminMessagesRoute
@@ -183,17 +102,8 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/about'
     | '/admin'
-    | '/brands'
-    | '/contact'
-    | '/layout'
-    | '/legal'
     | '/login'
-    | '/media'
-    | '/membership'
-    | '/news'
-    | '/products'
     | '/admin/brands'
     | '/admin/help'
     | '/admin/messages'
@@ -203,16 +113,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
-    | '/brands'
-    | '/contact'
-    | '/layout'
-    | '/legal'
     | '/login'
-    | '/media'
-    | '/membership'
-    | '/news'
-    | '/products'
     | '/admin/brands'
     | '/admin/help'
     | '/admin/messages'
@@ -222,17 +123,8 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/about'
     | '/admin'
-    | '/brands'
-    | '/contact'
-    | '/layout'
-    | '/legal'
     | '/login'
-    | '/media'
-    | '/membership'
-    | '/news'
-    | '/products'
     | '/admin/brands'
     | '/admin/help'
     | '/admin/messages'
@@ -243,49 +135,12 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
   AdminRoute: typeof AdminRouteWithChildren
-  BrandsRoute: typeof BrandsRoute
-  ContactRoute: typeof ContactRoute
-  LayoutRoute: typeof LayoutRoute
-  LegalRoute: typeof LegalRoute
   LoginRoute: typeof LoginRoute
-  MediaRoute: typeof MediaRoute
-  MembershipRoute: typeof MembershipRoute
-  NewsRoute: typeof NewsRoute
-  ProductsRoute: typeof ProductsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/news': {
-      id: '/news'
-      path: '/news'
-      fullPath: '/news'
-      preLoaderRoute: typeof NewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/membership': {
-      id: '/membership'
-      path: '/membership'
-      fullPath: '/membership'
-      preLoaderRoute: typeof MembershipRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/media': {
-      id: '/media'
-      path: '/media'
-      fullPath: '/media'
-      preLoaderRoute: typeof MediaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/login': {
       id: '/login'
       path: '/login'
@@ -293,46 +148,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/legal': {
-      id: '/legal'
-      path: '/legal'
-      fullPath: '/legal'
-      preLoaderRoute: typeof LegalRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/layout': {
-      id: '/layout'
-      path: '/layout'
-      fullPath: '/layout'
-      preLoaderRoute: typeof LayoutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/brands': {
-      id: '/brands'
-      path: '/brands'
-      fullPath: '/brands'
-      preLoaderRoute: typeof BrandsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/admin': {
       id: '/admin'
       path: '/admin'
       fullPath: '/admin'
       preLoaderRoute: typeof AdminRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -409,17 +229,8 @@ const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
   AdminRoute: AdminRouteWithChildren,
-  BrandsRoute: BrandsRoute,
-  ContactRoute: ContactRoute,
-  LayoutRoute: LayoutRoute,
-  LegalRoute: LegalRoute,
   LoginRoute: LoginRoute,
-  MediaRoute: MediaRoute,
-  MembershipRoute: MembershipRoute,
-  NewsRoute: NewsRoute,
-  ProductsRoute: ProductsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

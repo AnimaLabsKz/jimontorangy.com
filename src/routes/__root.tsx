@@ -17,8 +17,8 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "JIMON Group — Восточная сила природы для всего мира" },
       { name: "twitter:description", content: "JIMON TORANGY DAILY NECESSITES — корпоративная группа здоровья, продукция ТКМ, БАДы и косметика. 33 года опыта, 4 столетних бренда." },
-      { property: "og:image", content: "/jimon/references/home.png" },
-      { name: "twitter:image", content: "/jimon/references/home.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0cc15b23-8097-4bf3-bace-fcb11766eb06/id-preview-d475824a--957aeb17-fb5f-43f9-ac14-5618391e2f36.lovable.app-1776853091498.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0cc15b23-8097-4bf3-bace-fcb11766eb06/id-preview-d475824a--957aeb17-fb5f-43f9-ac14-5618391e2f36.lovable.app-1776853091498.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

@@ -31,7 +31,7 @@
   "products": { "title": "Products", "subtitle": "Three directions — from pharmaceuticals to everyday cosmetics", "categories": { "all": "All", "medicine": "Pharmaceuticals", "supplements": "Supplements & drinks", "cosmetics": "Cosmetics" }, "empty": "Product catalogue is being filled" },
   "contact": {
     "title": "Contact", "subtitle": "Get in touch with our team in Kazakhstan",
-    "address_label": "Address", "address_value": "Almaty, Daraboz microdistrict, house 49, office 37", "phone_label": "Phone", "email_label": "E-mail",
+    "address_label": "Address", "address_value": "Almaty, Daraboz st., 49-37", "phone_label": "Phone", "email_label": "E-mail",
     "form_title": "Write to us", "form_name": "Your name", "form_email": "E-mail", "form_phone": "Phone (optional)", "form_message": "Message", "form_submit": "Send",
     "form_success": "Thank you! We will get back to you shortly.", "form_error": "Failed to send the message. Please try again."
   },
