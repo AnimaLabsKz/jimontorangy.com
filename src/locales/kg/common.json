@@ -2,7 +2,7 @@
   "brand": { "name": "JIMON Group", "tagline": "Чыгыштын табигый күчү бүт дүйнө үчүн", "slogan": "Алтын сапат — жалпы баалуулук" },
   "nav": { "home": "Башкы бет", "about": "Компания жөнүндө", "brands": "Бренддер", "products": "Продукция", "news": "Жаңылыктар", "contact": "Байланыш", "admin": "Админ", "login": "Кирүү", "logout": "Чыгуу" },
   "hero": {
-    "eyebrow": "JIMON TORANGY DAILY NECESSITES",
+    "eyebrow": "JIMON TORANGY DAILY NECESSITIES",
     "title": "Заманбап дүйнө үчүн Чыгыштын табигый күчү",
     "subtitle": "Маңызын өткөрүп, ишенимдүүлүк менен жаңылык киргизебиз — ден соолук өндүрүшүн өнүктүрөбүз. 33 жылдык тажрыйба, салттуу медицинанын төрт кылымдык бренди.",
     "cta_primary": "Бренд жөнүндө",
@@ -35,7 +35,7 @@
     "form_title": "Бизге жазыңыз", "form_name": "Атыңыз", "form_email": "E-mail", "form_phone": "Телефон (милдеттүү эмес)", "form_message": "Билдирүү", "form_submit": "Жөнөтүү",
     "form_success": "Рахмат! Жакында сиз менен байланышабыз.", "form_error": "Билдирүүнү жөнөтүү мүмкүн болбоду. Кайра аракет кылыңыз."
   },
-  "footer": { "company": "JIMON TORANGY DAILY NECESSITES ЖЧК", "rights": "Бардык укуктар корголгон", "legal_title": "Реквизиттер", "links_title": "Бөлүмдөр", "contacts_title": "Байланыш" },
+  "footer": { "company": "JIMON TORANGY DAILY NECESSITIES ЖЧК", "rights": "Бардык укуктар корголгон", "legal_title": "Реквизиттер", "links_title": "Бөлүмдөр", "contacts_title": "Байланыш" },
   "auth": { "login_title": "Системага кирүү", "login_subtitle": "Контентти башкаруу үчүн кириңиз", "email": "E-mail", "password": "Сырсөз", "sign_in": "Кирүү", "sign_up": "Каттоо", "google": "Google аркылуу кирүү", "have_account": "Аккаунтуңуз барбы?", "no_account": "Аккаунтуңуз жокпу?", "switch_signup": "Аккаунт түзүү", "switch_signin": "Кирүү", "or": "же" },
   "admin": { "title": "Админ-панель", "menu": { "news": "Жаңылыктар", "brands": "Бренддер", "products": "Продукция", "translations": "Котормолор", "messages": "Кайрылуулар", "help": "Колдонмо" }, "no_access": "Сизде админ-панелге кирүү укугу жок. Администраторго кайрылыңыз." },
   "common": { "loading": "Жүктөлүүдө…", "save": "Сактоо", "cancel": "Жокко чыгаруу", "delete": "Өчүрүү", "edit": "Түзөтүү", "create": "Түзүү", "back": "Артка" }

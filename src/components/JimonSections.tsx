@@ -31,7 +31,7 @@ export function SectionHeading({
 }) {
   return (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      {eyebrow && <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">{eyebrow}</p>}
+      {eyebrow && <p className="text-xs font-semibold uppercase text-primary">{eyebrow}</p>}
       <h2 className="text-display mt-3 text-3xl font-extrabold text-foreground sm:text-4xl md:text-5xl">{title}</h2>
       {subtitle && <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">{subtitle}</p>}
     </div>
@@ -41,8 +41,8 @@ export function SectionHeading({
 export function HomeExperience() {
   return (
     <>
-      <section className="bg-background">
-        <img src={homeAssets.hero} alt="JIMON production network" className="h-auto w-full" />
+      <section className="overflow-hidden bg-background">
+        <img src={homeAssets.hero} alt="JIMON production network" className="h-auto w-full max-w-full" />
       </section>
       <section className="bg-background py-16 md:py-24">
         <div className="container-app">
@@ -132,7 +132,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex max-w-full flex-wrap gap-2">
         <FilterButton active={active === "all"} onClick={() => setActive("all")}>Все</FilterButton>
         {(Object.keys(categoryLabels) as ProductCategory[]).map((key) => (
           <FilterButton key={key} active={active === key} onClick={() => setActive(key)}>{categoryLabels[key]}</FilterButton>
@@ -142,15 +142,15 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((product) => (
           <article key={product.id} className="flex flex-col overflow-hidden rounded-md border border-border bg-card shadow-sm">
-            <div className="aspect-[4/5] bg-cream">
+            <div className="aspect-square bg-cream sm:aspect-[4/5]">
               <img src={product.image} alt={product.subtitle ? `${product.title} ${product.subtitle}` : product.title} loading="lazy" className="h-full w-full object-contain" />
             </div>
-            <div className="flex flex-1 flex-col p-4">
+            <div className="flex min-w-0 flex-1 flex-col p-4">
               <p className="text-xs text-primary">{categoryLabels[product.category]}</p>
               <h3 className="mt-1 text-display text-lg font-bold text-foreground">{product.title}</h3>
               {product.subtitle && <p className="mt-1 text-sm text-muted-foreground">{product.subtitle}</p>}
               {showInquiry && (
-                <button onClick={() => add(product)} className="mt-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
+                <button onClick={() => add(product)} className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
                   <PackagePlus className="h-4 w-4" /> Добавить в заявку
                 </button>
               )}
@@ -161,7 +161,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
 
       {showInquiry && (
         <div className="mt-8 rounded-md border border-border bg-card p-5">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10 text-primary"><ShoppingBag className="h-5 w-5" /></span>
               <div>
@@ -169,7 +169,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
                 <p className="text-sm text-muted-foreground">Без онлайн-оплаты: выбранные товары попадут в запрос на консультацию.</p>
               </div>
             </div>
-            <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-gold px-4 py-2 text-sm font-semibold text-gold-foreground">
+            <Link to="/contact" className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gold px-4 py-2 text-sm font-semibold text-gold-foreground md:w-auto">
               Запросить консультацию <Send className="h-4 w-4" />
             </Link>
           </div>
@@ -290,7 +290,7 @@ export function ContactContent() {
           <div className="space-y-5">
             <img src={contactAssets.hero} alt="Contact center" className="w-full rounded-md border border-border" />
             <div className="rounded-md border border-border bg-card p-6">
-              <h3 className="text-display text-xl font-bold">JIMON TORANGY DAILY NECESSITES ЖШС</h3>
+              <h3 className="text-display text-xl font-bold">JIMON TORANGY DAILY NECESSITIES ЖШС</h3>
               <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <li className="flex gap-2"><MapPin className="h-4 w-4 text-primary" /> Алматы қ., Дарабоз ш.а., 49-үй, 37-кеңсе</li>
                 <li>БСН/БИН: 250540014840</li>
@@ -300,17 +300,17 @@ export function ContactContent() {
             </div>
           </div>
           <div className="space-y-5">
-            <div className="rounded-md border border-border bg-card p-6">
+            <form action="mailto:info@jimon.kz" method="post" encType="text/plain" className="rounded-md border border-border bg-card p-6">
               <h3 className="text-display text-xl font-bold">Напишите нам</h3>
               <div className="mt-5 grid gap-4">
-                <input placeholder="Ваше имя" className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
-                <input placeholder="Телефон или E-mail" className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
-                <textarea placeholder="Сообщение" rows={5} className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
-                <button className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">
+                <input name="name" placeholder="Ваше имя" required className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
+                <input name="contact" placeholder="Телефон или E-mail" required className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
+                <textarea name="message" placeholder="Сообщение" rows={5} required className="rounded-md border border-input bg-background px-4 py-3 text-sm" />
+                <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">
                   Отправить <Mail className="h-4 w-4" />
                 </button>
               </div>
-            </div>
+            </form>
             <img src={contactAssets.chinaBases} alt="China official bases" className="w-full rounded-md border border-border" />
             <img src={contactAssets.hotlineQr} alt="China hotline and official QR" className="w-full rounded-md border border-border" />
           </div>

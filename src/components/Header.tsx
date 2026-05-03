@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Menu, Search } from "lucide-react";
 import { LangSwitcher } from "./LangSwitcher";
 import jimonLogo from "@/assets/jimon-logo.png";
 
@@ -18,14 +17,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="container-app flex h-20 items-center justify-between gap-4 md:h-24">
-        <Link to="/" className="flex items-center gap-3" aria-label={t("brand.name")}>
+      <div className="container-app flex h-16 min-w-0 items-center justify-between gap-2 md:h-24 md:gap-4">
+        <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={t("brand.name")}>
           <img
             src={jimonLogo}
             alt={t("brand.name")}
             width={520}
             height={140}
-            className="h-14 w-auto md:h-20"
+            className="h-10 w-auto shrink md:h-20"
           />
         </Link>
 
@@ -37,14 +36,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <button className="hidden rounded-md p-2 text-foreground/70 hover:bg-muted md:inline-flex" aria-label="Search">
-            <Search className="h-5 w-5" />
-          </button>
+        <div className="flex shrink-0 items-center gap-1 md:gap-2">
           <LangSwitcher />
-          <button className="rounded-md p-2 text-foreground/70 hover:bg-muted lg:hidden" aria-label="Menu">
-            <Menu className="h-6 w-6" />
-          </button>
         </div>
       </div>
     </header>
