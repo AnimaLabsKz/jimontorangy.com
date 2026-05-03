@@ -34,7 +34,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               {t("footer.contacts_title")}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-cream/80">
@@ -50,7 +50,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               {t("footer.links_title")}
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-cream/70">
@@ -63,7 +63,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               {t("footer.legal_title")}
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-cream/70">
@@ -80,7 +80,7 @@ export function Footer() {
           <p className="text-xs text-cream/60">
             © {year} {t("footer.company")}. {t("footer.rights")}.
           </p>
-          <p className="text-xs uppercase text-gold/80">{t("brand.slogan")}</p>
+          <p className="text-xs uppercase tracking-wider text-gold/80">{t("brand.slogan")}</p>
         </div>
       </div>
     </footer>

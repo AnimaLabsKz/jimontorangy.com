@@ -2,7 +2,7 @@
   "brand": { "name": "JIMON Group", "tagline": "Butun dunyo uchun Sharqning tabiiy kuchi", "slogan": "Oltin sifati — umumiy qadriyat" },
   "nav": { "home": "Bosh sahifa", "about": "Kompaniya haqida", "brands": "Brendlar", "products": "Mahsulotlar", "news": "Yangiliklar", "contact": "Aloqa", "admin": "Admin", "login": "Kirish", "logout": "Chiqish" },
   "hero": {
-    "eyebrow": "JIMON TORANGY DAILY NECESSITIES",
+    "eyebrow": "JIMON TORANGY DAILY NECESSITES",
     "title": "Zamonaviy dunyo uchun Sharqning tabiiy kuchi",
     "subtitle": "Mohiyatni yetkazib, sodiqlik bilan innovatsiyalar yaratamiz — sogʻliqni saqlash sohasini rivojlantiramiz. 33 yillik tajriba, anʼanaviy tibbiyotning toʻrtta asrlik brendi.",
     "cta_primary": "Brend haqida",
@@ -35,7 +35,7 @@
     "phone_label": "Telefon", "email_label": "E-mail", "form_title": "Bizga yozing", "form_name": "Ismingiz", "form_email": "E-mail", "form_phone": "Telefon (ixtiyoriy)", "form_message": "Xabar", "form_submit": "Yuborish",
     "form_success": "Rahmat! Tez orada siz bilan bogʻlanamiz.", "form_error": "Xabarni yuborib boʻlmadi. Qaytadan urining."
   },
-  "footer": { "company": "JIMON TORANGY DAILY NECESSITIES MChJ", "rights": "Barcha huquqlar himoyalangan", "legal_title": "Rekvizitlar", "links_title": "Boʻlimlar", "contacts_title": "Aloqa" },
+  "footer": { "company": "JIMON TORANGY DAILY NECESSITES MChJ", "rights": "Barcha huquqlar himoyalangan", "legal_title": "Rekvizitlar", "links_title": "Boʻlimlar", "contacts_title": "Aloqa" },
   "auth": { "login_title": "Tizimga kirish", "login_subtitle": "Kontentni boshqarish uchun kiring", "email": "E-mail", "password": "Parol", "sign_in": "Kirish", "sign_up": "Roʻyxatdan oʻtish", "google": "Google orqali kirish", "have_account": "Akkauntingiz bormi?", "no_account": "Akkauntingiz yoʻqmi?", "switch_signup": "Akkaunt yaratish", "switch_signin": "Kirish", "or": "yoki" },
   "admin": { "title": "Admin-panel", "menu": { "news": "Yangiliklar", "brands": "Brendlar", "products": "Mahsulotlar", "translations": "Tarjimalar", "messages": "Murojaatlar", "help": "Yoʻriqnoma" }, "no_access": "Sizda admin-panelga kirish huquqi yoʻq. Administratorga murojaat qiling." },
   "common": { "loading": "Yuklanmoqda…", "save": "Saqlash", "cancel": "Bekor qilish", "delete": "Oʻchirish", "edit": "Tahrirlash", "create": "Yaratish", "back": "Orqaga" }

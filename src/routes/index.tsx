@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "JIMON TORANGY DAILY NECESSITIES — корпоративный сайт JIMON Group: бренды, продукция, производственная структура, новости и контакты в Казахстане.",
+          "JIMON TORANGY DAILY NECESSITES — корпоративный сайт JIMON Group: бренды, продукция, производственная структура, новости и контакты в Казахстане.",
       },
       { property: "og:title", content: "JIMON Group — продукция, бренды и здоровье" },
       { property: "og:description", content: "Каталог JIMON, бренды, производственные базы и официальные контакты." },

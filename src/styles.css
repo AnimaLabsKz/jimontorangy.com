@@ -112,7 +112,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
   }
 
   ::selection {
@@ -141,7 +141,7 @@
 
   .text-display {
     font-family: var(--font-display);
-    letter-spacing: 0;
+    letter-spacing: -0.025em;
   }
 
   .bg-forest-gradient {
