@@ -16,7 +16,7 @@
     "logout": "Шығу"
   },
   "hero": {
-    "eyebrow": "JIMON TORANGY DAILY NECESSITES",
+    "eyebrow": "JIMON TORANGY DAILY NECESSITIES",
     "title": "Заманауи әлем үшін Шығыстың табиғи күші",
     "subtitle": "Мәнді жеткізіп, адалдықпен жаңалық енгіземіз — денсаулық индустриясын дамытамыз. 33 жылдық тәжірибе, төрт ғасырлық дәстүрлі медицина брендтері.",
     "cta_primary": "Бренд туралы",
@@ -73,7 +73,7 @@
     "title": "Байланыс",
     "subtitle": "Қазақстандағы біздің командамен байланысыңыз",
     "address_label": "Мекенжай",
-    "address_value": "Алматы қ., Дарабоз көш., 49-37",
+    "address_value": "Алматы қ., Дарабоз ш.а., 49-үй, 37-кеңсе",
     "phone_label": "Телефон",
     "email_label": "E-mail",
     "form_title": "Бізге жазыңыз",
@@ -85,7 +85,7 @@
     "form_success": "Рақмет! Жақын арада сізбен байланысамыз.",
     "form_error": "Хабарламаны жіберу мүмкін болмады. Қайталап көріңіз."
   },
-  "footer": { "company": "JIMON TORANGY DAILY NECESSITES ЖШС", "rights": "Барлық құқықтары қорғалған", "legal_title": "Деректемелер", "links_title": "Бөлімдер", "contacts_title": "Байланыс" },
+  "footer": { "company": "JIMON TORANGY DAILY NECESSITIES ЖШС", "rights": "Барлық құқықтары қорғалған", "legal_title": "Деректемелер", "links_title": "Бөлімдер", "contacts_title": "Байланыс" },
   "auth": {
     "login_title": "Жүйеге кіру", "login_subtitle": "Контентті басқару үшін кіріңіз", "email": "E-mail", "password": "Құпия сөз", "sign_in": "Кіру", "sign_up": "Тіркелу", "google": "Google арқылы кіру", "have_account": "Аккаунтыңыз бар ма?", "no_account": "Аккаунтыңыз жоқ па?", "switch_signup": "Аккаунт жасау", "switch_signin": "Кіру", "or": "немесе"
   },

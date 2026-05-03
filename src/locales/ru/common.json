@@ -16,7 +16,7 @@
     "logout": "Выйти"
   },
   "hero": {
-    "eyebrow": "JIMON TORANGY DAILY NECESSITES",
+    "eyebrow": "JIMON TORANGY DAILY NECESSITIES",
     "title": "Восточная сила природы для современного мира",
     "subtitle": "Передавая суть, инновируя в верности — мы развиваем индустрию здоровья. 33 года опыта, 4 столетних бренда традиционной медицины.",
     "cta_primary": "Узнать о бренде",
@@ -107,7 +107,7 @@
     "title": "Контакты",
     "subtitle": "Свяжитесь с нашей командой в Казахстане",
     "address_label": "Адрес",
-    "address_value": "Алматы, ул. Дарабоз, 49-37",
+    "address_value": "Алматы қ., Дарабоз ш.а., 49-үй, 37-кеңсе",
     "phone_label": "Телефон",
     "email_label": "E-mail",
     "form_title": "Напишите нам",
@@ -120,7 +120,7 @@
     "form_error": "Не удалось отправить сообщение. Попробуйте ещё раз."
   },
   "footer": {
-    "company": "JIMON TORANGY DAILY NECESSITES ЖШС",
+    "company": "JIMON TORANGY DAILY NECESSITIES ЖШС",
     "rights": "Все права защищены",
     "legal_title": "Реквизиты",
     "links_title": "Разделы",

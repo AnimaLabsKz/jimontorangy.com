@@ -32,8 +32,8 @@ function LoginPage() {
       } else if (!result.redirected) {
         navigate({ to: "/admin" });
       }
-    } catch (err: any) {
-      toast.error(err.message || "Google sign-in failed");
+    } catch (err: unknown) {
+      toast.error(err instanceof Error ? err.message : "Google sign-in failed");
     } finally {
       setGoogleLoading(false);
     }
@@ -61,8 +61,8 @@ function LoginPage() {
         if (error) throw error;
         navigate({ to: "/admin" });
       }
-    } catch (err: any) {
-      toast.error(err.message || "Ошибка авторизации");
+    } catch (err: unknown) {
+      toast.error(err instanceof Error ? err.message : "Ошибка авторизации");
     } finally {
       setLoading(false);
     }

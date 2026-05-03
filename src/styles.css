@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -112,7 +112,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
 
   ::selection {
@@ -141,7 +141,7 @@
 
   .text-display {
     font-family: var(--font-display);
-    letter-spacing: -0.025em;
+    letter-spacing: 0;
   }
 
   .bg-forest-gradient {

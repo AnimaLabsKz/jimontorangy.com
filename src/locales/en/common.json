@@ -2,7 +2,7 @@
   "brand": { "name": "JIMON Group", "tagline": "Eastern power of nature for the whole world", "slogan": "Gold quality — a shared value" },
   "nav": { "home": "Home", "about": "About", "brands": "Brands", "products": "Products", "news": "News", "contact": "Contact", "admin": "Admin", "login": "Sign in", "logout": "Sign out" },
   "hero": {
-    "eyebrow": "JIMON TORANGY DAILY NECESSITES",
+    "eyebrow": "JIMON TORANGY DAILY NECESSITIES",
     "title": "Eastern power of nature for the modern world",
     "subtitle": "Conveying essence, innovating with loyalty — we develop the health industry. 33 years of experience, four century-old brands of traditional medicine.",
     "cta_primary": "Discover the brand",
@@ -31,11 +31,11 @@
   "products": { "title": "Products", "subtitle": "Three directions — from pharmaceuticals to everyday cosmetics", "categories": { "all": "All", "medicine": "Pharmaceuticals", "supplements": "Supplements & drinks", "cosmetics": "Cosmetics" }, "empty": "Product catalogue is being filled" },
   "contact": {
     "title": "Contact", "subtitle": "Get in touch with our team in Kazakhstan",
-    "address_label": "Address", "address_value": "Almaty, Daraboz st., 49-37", "phone_label": "Phone", "email_label": "E-mail",
+    "address_label": "Address", "address_value": "Almaty, Daraboz microdistrict, house 49, office 37", "phone_label": "Phone", "email_label": "E-mail",
     "form_title": "Write to us", "form_name": "Your name", "form_email": "E-mail", "form_phone": "Phone (optional)", "form_message": "Message", "form_submit": "Send",
     "form_success": "Thank you! We will get back to you shortly.", "form_error": "Failed to send the message. Please try again."
   },
-  "footer": { "company": "JIMON TORANGY DAILY NECESSITES LLP", "rights": "All rights reserved", "legal_title": "Legal", "links_title": "Sections", "contacts_title": "Contacts" },
+  "footer": { "company": "JIMON TORANGY DAILY NECESSITIES LLP", "rights": "All rights reserved", "legal_title": "Legal", "links_title": "Sections", "contacts_title": "Contacts" },
   "auth": { "login_title": "Sign in", "login_subtitle": "Sign in to manage content", "email": "E-mail", "password": "Password", "sign_in": "Sign in", "sign_up": "Sign up", "google": "Sign in with Google", "have_account": "Already have an account?", "no_account": "Don't have an account?", "switch_signup": "Create account", "switch_signin": "Sign in", "or": "or" },
   "admin": { "title": "Admin panel", "menu": { "news": "News", "brands": "Brands", "products": "Products", "translations": "Translations", "messages": "Messages", "help": "Help" }, "no_access": "You don't have access to the admin panel. Please contact an administrator." },
   "common": { "loading": "Loading…", "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "create": "Create", "back": "Back" }
