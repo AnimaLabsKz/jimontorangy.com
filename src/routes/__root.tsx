@@ -1,5 +1,7 @@
 import { Outlet, createRootRoute, HeadContent, Scripts, Link } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
+import { InquiryProvider } from "@/hooks/use-inquiry";
+import { InquiryDrawer } from "@/components/InquiryDrawer";
 
 import appCss from "../styles.css?url";
 
@@ -48,10 +50,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <>
+    <InquiryProvider>
       <Outlet />
+      <InquiryDrawer />
       <Toaster position="top-center" />
-    </>
+    </InquiryProvider>
   );
 }
 
