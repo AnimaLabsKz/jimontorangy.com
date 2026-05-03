@@ -1,6 +1,6 @@
 {
   "brand": { "name": "JIMON Group", "tagline": "Чыгыштын табигый күчү бүт дүйнө үчүн", "slogan": "Алтын сапат — жалпы баалуулук" },
-  "nav": { "home": "Башкы бет", "about": "Компания жөнүндө", "brands": "Бренддер", "products": "Продукция", "news": "Жаңылыктар", "contact": "Байланыш", "admin": "Админ", "login": "Кирүү", "logout": "Чыгуу" },
+  "nav": { "home": "Башкы бет", "about": "Компания жөнүндө", "brands": "Бренддер", "products": "Продукция", "layout": "Өндүрүш", "news": "Жаңылыктар", "membership": "Өнөктөштөргө", "contact": "Байланыш", "legal": "Укуктук", "admin": "Админ", "login": "Кирүү", "logout": "Чыгуу" },
   "hero": {
     "eyebrow": "JIMON TORANGY DAILY NECESSITES",
     "title": "Заманбап дүйнө үчүн Чыгыштын табигый күчү",
