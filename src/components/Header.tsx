@@ -1,10 +1,11 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { LangSwitcher } from "./LangSwitcher";
 import jimonLogo from "@/assets/jimon-logo.png";
 
 export function Header() {
   const { t } = useTranslation();
+  const location = useLocation();
   const nav = [
     { to: "/", label: t("nav.home") },
     { to: "/about", label: t("nav.about") },
@@ -30,7 +31,13 @@ export function Header() {
 
         <nav className="hidden items-center gap-5 text-sm font-semibold text-foreground/80 lg:flex">
           {nav.map((item) => (
-            <Link key={item.to} to={item.to} className="transition-colors hover:text-primary active:text-primary">
+            <Link
+              key={item.to}
+              to={item.to}
+              className={`transition-colors hover:text-primary ${
+                item.to === "/" ? (location.pathname === "/" ? "text-primary" : "") : location.pathname.startsWith(item.to) ? "text-primary" : ""
+              }`}
+            >
               {item.label}
             </Link>
           ))}

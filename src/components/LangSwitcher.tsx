@@ -14,6 +14,7 @@ export function LangSwitcher({ variant = "light" }: { variant?: "light" | "dark"
   return (
     <div className="relative shrink-0">
       <button
+        type="button"
         onClick={() => setOpen((v) => !v)}
         onBlur={() => setTimeout(() => setOpen(false), 150)}
         className={`flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium transition-colors md:gap-1.5 md:px-2.5 ${colors}`}
@@ -27,6 +28,7 @@ export function LangSwitcher({ variant = "light" }: { variant?: "light" | "dark"
         <div className="absolute right-0 top-full z-50 mt-1 w-44 overflow-hidden rounded-md border border-border bg-card shadow-lg animate-fade-in">
           {SUPPORTED_LANGS.map((code) => (
             <button
+              type="button"
               key={code}
               onMouseDown={(e) => {
                 e.preventDefault();

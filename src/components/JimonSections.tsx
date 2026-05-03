@@ -150,7 +150,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
               <h3 className="mt-1 text-display text-lg font-bold text-foreground">{product.title}</h3>
               {product.subtitle && <p className="mt-1 text-sm text-muted-foreground">{product.subtitle}</p>}
               {showInquiry && (
-                <button onClick={() => add(product)} className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
+                <button type="button" onClick={() => add(product)} className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
                   <PackagePlus className="h-4 w-4" /> Добавить в заявку
                 </button>
               )}
@@ -176,7 +176,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
           {basket.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-2">
               {basket.map((item) => (
-                <button key={item.id} onClick={() => remove(item.id)} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-sm">
+                <button type="button" key={item.id} onClick={() => remove(item.id)} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-sm">
                   {item.title} {item.subtitle ? `· ${item.subtitle}` : ""} <X className="h-3.5 w-3.5" />
                 </button>
               ))}
@@ -190,7 +190,7 @@ export function ProductCatalog({ limit, showInquiry = true }: { limit?: number; 
 
 function FilterButton({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
-    <button onClick={onClick} className={active ? "rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" : "rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground hover:bg-muted"}>
+    <button type="button" onClick={onClick} className={active ? "rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" : "rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground hover:bg-muted"}>
       {children}
     </button>
   );
