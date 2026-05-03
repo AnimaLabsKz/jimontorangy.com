@@ -1,6 +1,6 @@
 {
   "brand": { "name": "JIMON Group", "tagline": "Eastern power of nature for the whole world", "slogan": "Gold quality — a shared value" },
-  "nav": { "home": "Home", "about": "About", "brands": "Brands", "products": "Products", "news": "News", "contact": "Contact", "admin": "Admin", "login": "Sign in", "logout": "Sign out" },
+  "nav": { "home": "Home", "about": "About", "brands": "Brands", "products": "Products", "layout": "Operations", "news": "News", "membership": "Partners", "contact": "Contact", "legal": "Legal", "admin": "Admin", "login": "Sign in", "logout": "Sign out" },
   "hero": {
     "eyebrow": "JIMON TORANGY DAILY NECESSITES",
     "title": "Eastern power of nature for the modern world",

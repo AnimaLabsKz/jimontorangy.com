@@ -1,6 +1,6 @@
 {
   "brand": { "name": "JIMON Group", "tagline": "Butun dunyo uchun Sharqning tabiiy kuchi", "slogan": "Oltin sifati — umumiy qadriyat" },
-  "nav": { "home": "Bosh sahifa", "about": "Kompaniya haqida", "brands": "Brendlar", "products": "Mahsulotlar", "news": "Yangiliklar", "contact": "Aloqa", "admin": "Admin", "login": "Kirish", "logout": "Chiqish" },
+  "nav": { "home": "Bosh sahifa", "about": "Kompaniya haqida", "brands": "Brendlar", "products": "Mahsulotlar", "layout": "Ishlab chiqarish", "news": "Yangiliklar", "membership": "Hamkorlar", "contact": "Aloqa", "legal": "Huquqiy", "admin": "Admin", "login": "Kirish", "logout": "Chiqish" },
   "hero": {
     "eyebrow": "JIMON TORANGY DAILY NECESSITES",
     "title": "Zamonaviy dunyo uchun Sharqning tabiiy kuchi",
