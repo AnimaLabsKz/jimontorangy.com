@@ -1,9 +1,8 @@
-"""Build static dist/ for Lovable hosting.
+"""Build static files for Lovable hosting.
 
-This site is a pure multilingual static site. We copy language directories
-to dist/ as-is (no HTML rewriting -- internal links use clean URLs and we
-rely on directory-index resolution + _redirects fallback for hosts that
-don't auto-resolve).
+The generated files are copied to public/ before the TanStack Start build.
+Exact files such as /ru/index.html, /ru/css/*, /ru/js/* remain static assets,
+while src/routes/$.tsx handles clean URLs such as /ru/ and /ru/product/.
 """
 
 from __future__ import annotations
@@ -14,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
+PUBLIC = ROOT / "public"
 LOCALES = ("en", "ru", "kk", "ky", "uz")
 DEFAULT_LOCALE = "ru"
 
@@ -133,7 +133,10 @@ li{{margin:.25rem 0}}a{{color:#0a66c2;text-decoration:none}}a:hover{{text-decora
 
 
 def main() -> None:
+    global DIST
     keep_existing = "--keep-existing" in sys.argv
+    target = PUBLIC if "--public" in sys.argv else DIST
+    DIST = target
     if DIST.exists() and not keep_existing:
         shutil.rmtree(DIST)
     DIST.mkdir(exist_ok=True)
@@ -147,7 +150,7 @@ def main() -> None:
     write_404()
     write_index_page(routes)
 
-    print(f"Built dist/ with {len(routes)} routes across {len(LOCALES)} locales.")
+    print(f"Built {DIST.relative_to(ROOT)}/ with {len(routes)} routes across {len(LOCALES)} locales.")
 
 
 if __name__ == "__main__":
