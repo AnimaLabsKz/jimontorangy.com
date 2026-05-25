@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "python3 -m http.server 8080 --bind 0.0.0.0",
     "start": "python3 -m http.server 8080 --bind 0.0.0.0",
-    "build": "rm -rf dist && mkdir -p dist && cp -r index.html en kk ky ru uz src tools .nojekyll README.md dist/",
+    "build": "python3 tools/build_static.py",
     "preview": "python3 -m http.server 8080 --bind 0.0.0.0 --directory dist"
   }
 }

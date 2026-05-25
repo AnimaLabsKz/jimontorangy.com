@@ -1,3 +1,3 @@
 [run]
-dev = "sh -c 'python3 -m http.server \"${PORT:-8080}\" --bind 0.0.0.0' --"
-build = "sh -c 'rm -rf dist && mkdir -p dist && cp -r index.html en kk ky ru uz src tools .nojekyll README.md dist/'"
+dev = "python3 -m http.server 8080 --bind 0.0.0.0"
+build = "python3 tools/build_static.py"
