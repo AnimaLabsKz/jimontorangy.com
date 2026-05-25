@@ -1,0 +1,960 @@
+<!DOCTYPE html><html lang="ky"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Пландоо жана жайгаштыруу - JIMON Co., Ltd расмий сайты</title>
+    <meta name="keywords" content="JIMON Co., Ltd. (www.jinmujituan.cn) 1993-жылы байыркы медицина борбору Ангуо шаарында негизделген. 30 жылдан ашык убакыттан бери, ал отургузуу, изилдөө жана өнүктүрүү, өндүрүш, сатуу жана саламаттыкты сактоо кызматтарын бириктирип, бүтүндөй салттуу кытай медицинасы жана саламаттыкты сактоо тармагына терең тартылган. Baoding Traditional Chinese Medicine жана Beijing Yuhontang сыяктуу кылымдарды карыткан бренддерди бириктирип, ал 300гө жакын дары-дармектерди бекитүүгө жана бир нече патенттерге ээ. Анын продуктылары салттуу кытай медицинасы даана, дары-дармек жана тамак-аш гомологдук продуктулар, ден соолук тамак-аш, териге кам көрүү жана косметика жана саламаттыкты башкарууну камтыйт. "Алтын сапаты жана бөлүшүү" түшүнүгү менен, технологияны кеңейтүү, акылдуу ден соолук, ата мекендик жана глобалдык планга негизделген, биз дүйнөлүк деңгээлдеги салттуу кытай медицинасы жана саламаттыкты сактоо тармагындагы топ болууга умтулабыз.">
+    <meta name="description" content="JIMON Co., Ltd көп жылдар бою салттуу кытай медицинасынын саламаттыкты сактоо тармагына терең тартылган жана толук өнөр жай чынжырына жана бир нече негизги техникалык квалификацияга ээ. Анын продукциялары фармацевтика, ден соолук үчүн тамак-аш, косметика жана териге кам көрүү жана башка тармактарды камтыйт. Ал "алтын сапаты жана бөлүшүү" концепциясын карманат, салттуу кытай медицинасын модернизациялоого жана эл аралык кылууга көмөктөшөт жана саламаттыкты сактоо тармагында ишенимдүү эталондук ишкана болууга умтулат.">
+    <script src="js/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?66e7c63b04eb92b418d1d9faa9272eea";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <link rel="icon" href="/jimon-localized-site/ky/images/index-logo.png">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .video-modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            align-items: center;
+            z-index: 999999;
+            padding: 15px;
+        }
+
+        .video-modal video {
+            max-width: 80vw;
+            max-height: 80vh;
+            margin: 0 auto;
+        }
+
+        .pc-footer-info {
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .pc-footer-info {
+                display: none;
+            }
+        }
+    </style>
+
+        <link rel="stylesheet" href="css/we-goods-category.css">
+    <style>
+        @media (min-width: 768px) {
+            .pc-banner {
+                 margin-bottom: 0px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .h5-wrap .modules {
+                padding: 15px 4px;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+<div id="video-modal" class="video-modal">
+    <video id="video-player" controls="" src="">
+</video></div>
+    <style>
+    .pc-top-bar {
+        background-image: url(images/top-bar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10vw 10px 0;
+    }
+
+    .pc-top-bar a {
+        color: white;
+        margin-right: 50px;
+    }
+
+    .nav-header-pc .nav-wrap a[href='/jimon-localized-site/ky/product_category'] {
+        color: #002009 !important;
+        font-weight: bold !important;
+    }
+
+    .b-navs > div > div {
+        margin: 5px;
+    }
+
+    .menu-item {
+        text-align: center;
+        position: relative;
+        flex: 1;
+    }
+
+    .menu-item a {
+        color: #000000 !important;
+    }
+
+    .sub-menu {
+        transition: height 0.5s;
+        background: white;
+        text-align: center;
+        box-sizing: border-box;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 30px;
+        width: 140px;
+        border-radius: 5px;
+        height: 0;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    .sub-menu > div {
+        padding: 5px 0;
+    }
+
+    @media (max-width: 1280px) {
+        .nav-empty{
+            display: none;
+        }
+    }
+
+    @media (max-width: 1080px) {
+            .menu-item{
+                flex: unset;
+            }
+    }
+
+    @media (max-width: 890px) {
+        .menu-item a{
+            font-size: 12px;
+        }
+
+
+    }
+
+    .i18n-switch {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-family: Arial, sans-serif;
+    }
+
+    .pc-top-bar .i18n-switch {
+        display: inline-flex;
+        margin-left: 16px;
+        vertical-align: middle;
+    }
+
+    .i18n-switch__link {
+        min-width: 30px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 1;
+        border-radius: 4px;
+        border: 1px solid transparent;
+    }
+
+    .pc-top-bar .i18n-switch__link {
+        color: white;
+        margin-right: 0;
+        border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    .pc-top-bar .i18n-switch__link:hover,
+    .pc-top-bar .i18n-switch__link.active {
+        background: white;
+        color: #054B1E !important;
+    }
+
+    .i18n-switch--mobile {
+        display: none;
+    }
+
+    @media (min-width: 769px) {
+        .i18n-switch--desktop {
+            display: inline-flex;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .i18n-switch--desktop {
+            display: none !important;
+        }
+
+        .i18n-switch--mobile {
+            display: flex;
+            justify-content: center;
+            padding: 8px 10px;
+            background: white;
+            border-bottom: 1px solid rgba(5, 75, 30, 0.12);
+        }
+
+        .i18n-switch--mobile .i18n-switch__link {
+            height: 26px;
+            min-width: 34px;
+            color: #173f24;
+            border-color: rgba(5, 75, 30, 0.18);
+            background: #f6f7f4;
+        }
+
+        .i18n-switch--mobile .i18n-switch__link:hover,
+        .i18n-switch--mobile .i18n-switch__link.active {
+            background: #054B1E;
+            color: white !important;
+        }
+    }
+
+</style>
+<div class="pc-top-bar">
+    <div></div>
+    <div>
+        <a href="/jimon-localized-site/ky/vip_center">Мүчө каттоо</a>
+        <a href="/jimon-localized-site/ky/contact_us">Байланыш</a>
+    </div>
+        <div class="i18n-switch i18n-switch--desktop" aria-label="Language"><a class="i18n-switch__link" href="/jimon-localized-site/kk/product_category/">Қаз</a><a class="i18n-switch__link" href="/jimon-localized-site/ru/product_category/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/product_category/">Eng</a><a class="i18n-switch__link active" href="/jimon-localized-site/ky/product_category/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/product_category/">O'z</a></div>
+</div>
+<header class="nav-header-pc">
+    <div class="left-logo">
+        <img src="images/699cfbc6eaa5c.png" alt="JIMON расмий сайты">
+    </div>
+    <div class="nav-wrap">
+        <div class="nav-empty" style="flex: 1;"></div>
+        <div class="nav-empty" style="flex: 1;"></div>
+                            <div class="menu-item">
+                <a href="/jimon-localized-site/ky/"> Башкы бет</a>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ky/walk_in_jimon"> JIMON жөнүндө</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ky/walk_in_jimon#_jituanjianjie">Топ жөнүндө</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_keyanliliang">Илимий-изилдөө мүмкүнчүлүгү</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_fuwulinian">Кызмат көрсөтүү философиясы</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_dongshizhangjianjie">Төрага жөнүндө</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_fazhanlicheng">Өнүгүү тарыхы</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_jituanrongyu">Топтун сыйлыктары</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ky/we_brands"> Биздин бренддер</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ky/we_brands#_guojishiye">Эл аралык көз караш</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_pinpailinian">Бренд философиясы</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_zhongyiyaoquanchanyelian">Кытай медицинасы бренди</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_pinpai">Ден соолук бренди</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ky/product_category"> Пландоо жана түзүм</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ky/product_category#_chanyejidi">Өндүрүш базалары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin">Кытай медицинасы өнүмдөрү</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product#_jinmodajiankang">Ден соолук өнүмдөрү</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product#_8_">Өсүмдүк суусундуктары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoteshanshipin">Тамак-аш кошумчалары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoteshanshipin">Өсүмдүк экстракты азыктары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoyaozhuang">Бетке кам көрүү каражаттары</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ky/post_list"> Жаңылыктар борбору</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ky/post_list-cid-1/">Компания жаңылыктары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/post_list-cid-4/">Ден соолук темалары</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/post_list-cid-5/">Жаңы медиа борбору</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href=""> Башкалар</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ky/vip_center">Мүчөлөр аймагы</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/contact_us">Байланыш</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ky/law">Укуктук билдирүү</a></div>
+                                                                        </div>
+                            </div>
+            </div>
+    <div class="search-wrap">
+        <input type="text" placeholder="Издөө" value="" id="g-search">
+                    <img style="width: 7%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAQAElEQVR4AexdbXLbuLJt0FlEquyaKP/0dN8ebrKScVYSz0rsWYn99vCuav5FmWdXzSJs4vUBxVi2JesDTQIgDkqwJIoE0KfRB90NSm6EhQgQgWoRIAFUq3oKTgRESACcBUSgYgRIABUrn6LXjQCkJwEABVYiUCkCJIBKFU+xiQAQIAEABVYiUCkCJIBKFU+x60agl54E0CPBZyJQIQIkgAqVTpGJQI8ACaBHgs9EoEIESAAVKp0i143ApvQkgE00+JoIVIYACaAyhVNcIrCJAAlgEw2+JgKVIUACqEzhFLduBF5LTwJ4jQjfE4GKECABVKRsikoEXiNAAniNCN8TgYoQIAFUpGyKWjcC26QnAWxDhceIQCUIkAAqUTTFJALbECABbEOFx4hAJQiQACpRNMWsG4Fd0pMAdiHD40SgAgRIABUomSISgV0IkAB2IcPjRKACBEgAFSiZItaNwHvSkwDeQ4efEYGJI0ACmLiCKR4ReA8BEsB76PAzIjBxBEgAE1cwxasbgX3SkwD2IZTw8/ns4+y5XnyZzy6+LGbnl129+L6Y9bU/dn6Jc57rx1nC4bPrAhAgAWSgpPns4+yXUf92fv2vTxe3i08XvvEffjxXuW283Ip3112VK/F97Y+5a5zzXD/8QDuLT+c/QpvaNvrpCILkICxCAhh5EnTGftGt3mrkMNBGDV2CYcuVOHfpRb6IaXGz0Ka2jX46ggA5nCtBaFViACmYdsnGikCABDCwmmDwMK4F3HVdiZtg7HIlWL0ldXEzEa1KDCCFX56CjhVjFpaiEThk8CSAQ1A68px5cOkvvsPtbtTgYVwSDF6N7ci2xj197SnoWDFmEMJCvQOEDeOOg72NhQAJwBBprJowmEaNXtSIvIixKy8jFyUs9Q5Ew5OeDCDjyINgdwMiQAKIBLdf7btYXm4Rw0c2menlHRn88gxCmMBEYqbKOnhYJICDoXp5Igy/d/HFy5VUVZQMVObGn93C4wEWVYlfgLCHDpEEcChS6/PgAsMdbtTNL9/FXwt18pMSgYYIz0RwUXjIczIQxV5IAjhQdQt1eTvDl1tB5lxYnhHoiUDWHgGJ4BmbvF+RAPbop1/xxYu6+TrRheVdBIJH0BMBcwTvYpXBhySAHUqY61ZeF+PLrXDFl6NLIALNEajndPS1vCAKgWMuJgFsQWuhk7ZhjL8FmWMPqcfk5QqhEzypY6/m+cMjQALYwBiTFJNVdNJuHObLaATcLGwf/nZ+PVfPSliyQYAEsFYFtrMwSYXuvgxWGBYMBu2pDVdPAFiRwqqvk/NUEHndMQiswwINs465iucehsCxZ1VNALjHvdFYX7Je9f3Kidz1Vby/CdXJlfS1P6bP/Xl4lpyLhlkgXhBwzsOc+tiqJQBk+MW763wU7IOh90bdOvm6/Hnvlj8fPv/n5/3Xvi7/fvgW6ur+j2Vf+2P63J+H56Ve37rHz2hLnP8G4siLGJzmBrhTIAlLdQSAFQcrj0/+RR2/6o0dhrpcG3pv1H+t7u8s5sVfq39WaGu5ergBcWwSA0ghPSG4mcAbYEhgoe6j26iKAJDlb5K6/J3RY1WGwS/XK/jRWjO4AMSwVFIAIWA8qIGQRMdo0P7RTYAEPp3/AEEffS0vCAic8qcaAujifbk9BaS4a9SgNFaHgfVGD+OLa9P2aowHdQlCUk8khAyaT7Dt5ZDWXAgJSAIyWqmCAGD8Mna8H4wecfzDZxgWDGw0rUZ2FEIGzSeAtMYPExxJQMYrkycA7O+Pavxq+EtNvnVGbxPHjzcdXvYE0lpuhAlOdyNenjHUOxdIIBC3sAyJwKQJIGT6R9nf79z83vCHVFiqtkEGfb4AuwnDj8MhORh+PHX4vsrv4VQJJksAMH4/RqY/rPidm3+qEkq6DkSA3QSEB25wj8CBBK4W3CEYbIpMkgDg9g9v/H4FI1hq4mww7WTcMIgAHgFyBDL0zoH34Z+hZAxHsUObHAGE1WJQt9+H/fulZsthBMVq3mjgS80RtO7pa7eFaNTom2aCJ/Ad27hvPuKBKAQmRQAhaeTlSoYqujUGw19WuurvghVECExa9/h5OG/AaWLQ89uE8rbEHJkMAYTVYcCtPuyNI/aNAXvq14II2kG9AackcHY751eKxapMggBg/N1Xea1g2WzHh1gfe+ObR/l6OwIgAXgDw4UEjiQgdqV4AsBqMJjxr11+TGo7yOtoCSTQDhYSuNmZ/5DRF7mk2FI8AQw1Eejyx89pEGc7UEjgdYt3we1BidVS0QSACYCJEAvC6+th/HT5X6Ny2nuQALyBQUIC3R5E+HfayHgVECiWAILizTP+iPflK40fU8O2DkMCTvMB3BmQiFIkAcw1C2wf98P43Tcaf8Rs2nPpUCQwVBi4R5xJfFwkAdgr3K+wv0/jH35OdyTgv1n2hDBwUWE+wALD4ggAiobCLYTv2sDK//S1e82/YyCwXD3cdLcQG/bGfMBJYBZFAHN1/cU47m8d3P5/Viehx4tORqAjAbkSs+JCPkBYjkKgKAKwdv1bx4TfUbPF+OQlbql2YkoC4XZwYTkUgWIIAFl/S9efxn/oFBn2PHMS8PJ92BHn0brVKIohgMZ7uzu/dNVhws9qCsW308rjn87stwXcDF8Hjx9VHS0UQQCLkOF1MwuVOJ1oYdWxaIxtmCCAm4We3KPuDHibXIxzl/AYTQY38UayJ4C5aeLPr8KPWExcqSWKBxJonVMSsBm9qcdoM6QsW8meACwTf5YTLEttFj6oEJZpeGYjhptN1QuwwadrJWsCwOrvRb6IRdGJFSaYRVtsYzAELPMB9AL2qylrAmjaM5OMLuP+/RMhlzMQCnT5AIsR0QvYh2K2BIDVX5y73CfAIZ8/OfnjkPN4Th4IgASs7hSkF/C+TrMlAKvVX5xc0fV/fxLk+GkrT+FfosePbVpeQDweL1vIlgDEZPX3K275vVR4Ke/gBVh5bme8OWin2rMkAKsbOZj136n3Ij4Inpv3N7GD9ZpI5o7AdhSzJACL1d+J3IUJtF1uHi0EgbZ5Msnf0AvYrvDsCMDqyxxPTkwmznbYeHQsBBAKWPwvQi9+NtaYh+pniHazIwDn3e+xgnL1j0Uwr+ttvAA3s1pc8kInbjTZEYAXib7xh6u/TKpYeQHOYHGZFLAqTFYEYMHQXP1VqxN8WHgBWFyYDHw5ObIiADHYruHq/1LBU3ln5QXohP93iZgMNWbFY6imj2u3Y2Y3O+6q12f7FTP/rzGZznsLL0ATipfTQSRekmwIoGl9dPJPmPmPnxEZtwAvwIncSVThnYGb8GVDAGq80cm/Vp4iJ8cmNHydIwLe+T9jx6WTnmHAGkTFYv0q+ZOLc/+9v8EKkVwMDmBQBCxI3nmJXmxkxDJkV1kQgEX2Xxr5nyGBYtt5IACSd5FhgOdNQb+UmQUBSCvRLtkS/2zil1h8MWUE4nd6mAfo50ceBOAkziVT919YKkLgMfrHQ3XiRy86UwBccchBDBcX/9P9z0GJo43BIgwoJQ8wNKjJCcAi/m+Z/R96nmTXvncStePjmQcQlOQEYBH/Y0WAMKz1INBKbNKXeQDMlvQEgFHEVMb/MegVfK1FHsDHhZ4Fo9cPPT0BxCYAGf/3uqzqGV6fE4kKA0TcJ8m4jDG09AQgLoqFW8b/Y8yTLPuIzQM43hAkSQkg/PR35NTCShDZBC8vFIHYPIBnIjAtATRyFrf/Lz56P7jQuc9hBwTi8wChmYr/JPUAonH3EhkDCkvVCGAn4GNUCDoUfGO1m5YADG4BHgso9pMfAl34F+sFfiABpFKtc3EJQA1g+AWgVMrLpF8nLioMbCrPA6T1ACInUcsdgEgEy788didAKt8KTEoAvnL2FRYisAWBMQ8lJYAxBWVfRIAIvEWgaALokkBvheKRmhDwP6OkbT2TgFEARl3sqgY/CjpeTAQMECjaAzCQn00UjkAbuQsQvRNljN/YzSUjgPjbgH3U9s/YQLM/IpAjAskIIEcwOCYiUBsCJIDaNE55icAGAskIgBn8DS3w5ckIxN7J530+oeTJIERcmIwAIsa8vpQ7CGsg+EQETkYgMQHUzb4na40XEgEjBBITQJwU8TsJcf3z6gkg0Liqd5OKJoAJTD+KEI2Am8Tv+kXDcGIDSQnARd7EIVL3d7lP1Pm0Lou+lTfyVuLC0WxKHn9sBrhk2Tn2DoHa7+TrUDj9b1ICiN+Coft3uuqncWXsV8pjbyUuHcWkBCCRCRjHn3Uuff4ZjN9FfqEs/Q+LGoBwchNJCaCVuH/vFMv+J6PGC7NAYD67iPxVaZHab0hLSgAisewby/5ZzGMO4kQEYnNATqT6X5VOSgAW7GuxCghLoQi4qC3A+BxUobBtDDspAWAcsSysAvwb7bDWh4CLzQFF5qAsEE/dhtpP6iHE9R89CeK659UJEfAikTmAuu8BEC3JCcA7iYrDmAiUKstidn4ZK3jLn5WX5AQQuxMggn/vFJ8NFpayEGglOvSzyEGVBdrb0SYngPidAAGLRU+Gt9DwSNYIOIlz/72/kcQlh+6TEwBY2IlEhQHMA0iFxc2ihG7i7kGJ6juji5MTALBgHgAosB6KAOP/Q5Haf14WBGCRB7CYFPvh4hk5IOC8+z12HPA8Y9uYwvVZEIBFHsAZTIopKLQGGbxI8fG/ZFKyIACwsYvMA2BS8K7ATGbVgMMw8fQY///SUBYEgNHE5gHQhgrD3QAAMeXq5XuseNz/f0ZQbeb5TcpXrTz+Gd2/95fRbbCBbBHoVn83ixmgE7mDxxnTxpSuzYYAoBQoJw5c3hQUh1/eV1vkebzz8QtNJEw5XZ4NAQAUC+U03l+jLdZpIYD8jheJS/6JSMvbfxWF50dWBGCjHHoBz+qdzqum9dFbf+L9DTzN6aASL0lWBADlxIcBIvQC4idGTi2E///g3GX0mJj9fwNhVgSA0T05+QPPcZVeQBx+eV3dtGffLUa0XD0kv//fQg7LNrIjAIubggDQmcF2EdphTYuA2eqv7n9aSfLsPTsCQBggzn+LhQsJo27bKLYlXp8SgTP/wSSp2zaO2f8tisyOADBGm2SgtkQvQEEo92GV+e+Sf/d35SIx3MizJIDgBZi4bG62+O3cZAUZTgVseRcCVsncXFb/XXKmPJ4lAQCQtnkySAZqS06+YCXRV3wUhMBidqGJPzeLHbIT3PnH1X8XjtkSgKUXYLWS7AKRx20RmM8+zsTLlRiUJ5NdJYOBZNpEtgQAvMy8AHGzRVhR0Cpr7ghYJf64+u/XdNYEYOcFKBC6ojAUUBwyf/zr08UtdnAshpnT6m8hzxBtZE0AENjOC5Bwh+Ac7iUaZs0OARC0lfE7xv4H6Td7AghegMF9AR0abtb4s1thyQ4BEHPjxUw3XP0PU3H2BAAxWnm6A6PjdXxlPiAeQ/sWrOL+MDInV3+tmPkPWOz5UwQBwAswZXQvVwsmBfdMjfE+toz7Rfxqubq32UI2tgKSiQAACjVJREFUgiDnZoogAAAYGN3k5iC0ptX7S5KA4pD4YWv8Iq1z0beRJ4Zk1O6LIQCgYpkQFN0aFCUBJJ6EJQkCuEvTKukHARAmhoUCb1gPQqAoAkAoYPFFoWdknCYF/fWcOwMydglf1HLu0rLfJ/fI1f9IQIsiAMi2XD3cOBHDL3Y4JYGzW5KAjFaC8Xtn+h2N1snXsECMJsVhHeV+VnEEAEA7pvcrvLapbk0CF9G/OScs7yKwQPLV2PixIND1fxf2nR8WSQBg+tY9fd0p1UkfOCUBfx0mqLAMgQBiftEdGNu2/eo/P++N54LtCHNurUgCAKAgAXFyJabFzZAYJAmYghoaQ7ZfjGN+NNw6Zv2Bw6m1WAKAwEvd73Wm+QC06pQEeJ8AkLCoc02wwvi9iHl41Ya4P98bfqSAUjQBAF/7fABa1aquKiauvuLjRARg/I0/M/tyz+YwnBI/4/5NRE57XTwBIBSwzwd0YGLVWnw6/4GJ3B3h30MRWGiyr/EffgjutxDbAuNn3G+DafEEABg6Enj8jNf21Wly8OwWE1pY9iIwX7v8oh7U3pNPOoFJv5Ng23HRJAgAsoEEbG8SQqt9dSEvgJAAE7w/yueXCOCuykZXfXhOLz+xeudXy58PAxG91Ri7dkr5OxkCAODL1cONmO8MoOWuYmIjpl2oe9sd4V8gMF+v+pZf50W7r2vLjP9rSKLfT4oAgMZSdwaGJAFBTKvubZcb4I1DCyXDYVd9CaV1uNOPGf8AhuGfyREAsBmeBNCL09yA3OLmlrmugFJZgbsPEhQlw6FFp/EPh/AkCQBwjUMC2pNzlyEs+O38GkYhEy+QEYbfufuaGxlY3hKNf2BITJufLAEApdFIAGFBIILeI5heaLBQV39MwxfxKxo/ZvGwddIEAOjGIwH0pnWDCMK33vRQqY+5hjaLteF3rv7wK36HFYzffeONPh0aQ/6dPAEAPJAAVhO8Hq0qEYh311g1uzxBGV7BfG302PJsdEtPQow/luFDO91Wn7Xx//fs4sviN/y3IfTB2iNQBQFAWEyo1uFmIW/4NWK0vK+q8SgZIGYOZKArKuLofVeN+Xln9OfhJ9KatdH7Ae7d3yeTE7kbYp8f8rVebrE7NDQJ7JMxt8+rIQAAj5uF2vA1Yj8yCaB3VBduKOrJAKvsIgEhzHWVBwkttG+MoQlG767Fy5WkKk6uhri9d66yNpCvl0v7IQn0YIhURQAQ+xcJ6ETA+3TVzTxWWTW6F4SguwnIHaDCSGPGh8mPirYWa2PvDR59ivYdxhDTSfS1PiT7EKZFN7WlAec/vP3lIdU9SaADqzoCgNggAUy40fMC6HxnXROChguiuQNUGOni04UPocOn8x8wXlTkFF5XHO9rd/6Fb3TlQ5XQnlzB2FF3DmH0D2D8T18Rng3R9X99urh1INltjZMEAipVEkCQXP9g4rWaF9BJYvgbg9qw+cPNRLcaYbyoApJ4VXG8rzhXci9qgIj3QcZDDPVd4+871DFYegJ9syU9V00AUBQmYPhNAZ0MeM86NAJY9eUrPLCheoJ35EQO+wES1XvNJFA9AYgWkAAmZBnegA641IcaW7fqD3dPP1b+4CEdg5GOq1YSIAFsTBQQQchE64QQ8auNj/gyCgGs+o+fQbJRzey5GMZ/8Mr/ui3VeY0kQAJ4PRH0PSZqi+1CnRT6lo+TEVASVQy7Vf+fQQk1yvh7+XSsp5JA30RpzySAHRqDN9ARweNnXVUyTxLuECLlYTUmGD4wHHoYJsbfD1LHXRMJkAB6xe94BhEgLGiL2C3YIcSYh9WAlj/v3RiGD7GOSvjhgkOqylALCZAADpkQes4mEYjlfynWtst/9K7+eIbfY9Y07s9B8jWVkAAJoJ9JBz6DCJZ/P3yDR0Ai6A3/YfAE3y71/O/q/q5x7ltKEtg1thKOkwBO1NILItDVoq48QXrD31QbSWATjeNekwCOw+vN2YEIVvd/9HkCUTJ4c9IkDvRGr27+z4dkK/4uKEkCu5B5/zgJ4H18jvq0J4MQHjj/rfwQoTN6yLPM0OhfK4ck8BqR/e9JAPsxOvqMjggebvpcAQwInkH+YYIaPBKc6sVgzL3RQ56jQUh0wdgkkEhMs25JAGZQbm8IxoOKbbE+TAjfQlQjS08IfhXGoGP5ZfCa4MRYMebtEuV/lCRwuI5IAIdjZXImDAvfQoSRgRCWumcO4+tIYR026CocDNOkR78KGXJtE14I/nsS+kK/S3Xrwxg0h4FxmXSXSSMkgcMUQQI4DKdBz4LxdaTQhQ0IHYJh/iKHx889ScB4UWHImxXHnuvj56Ve21VN2Kmho02QznL1cIO+BhUok8ZJAvsVQQLYj1HSMzpy+GfVPd/fwXhRYcibFcee67D33ScF5MjOhyQBeFSl3zFIAjhyQvH08hAgCezWGQlgNzb8ZEIIkAS2K5MEsB0XHp0gAiSBt0olAbzFhEcmjIAVCWyFSLdTS8sJkAC2apIHp4wASeBZuySAZyz4qiIESAKdskkAHQ78WyECJAGp7z8DVTjPKfI7CJxCAu809/KjAnIC9ABeqozvKkSgZhIgAVQ44SnyWwRqJQESwNu5wCOVIlAjCZAAKp3sFHs7AvtIYPtVBx7NMCdAAjhQdzytHgRqIgESQD3zmpIegUAtJEACOGJS8NS6EBiaBOazj7PUiJIAUmuA/WeNwCYJWA+08We3qUmABGCtVbY3OQSGIwE3a9oPv0vCQgJICD67LgeBoUjAO/kiCQsJICH47LosBIYgASfyJWUYQAIoaw5ytIkQ6LsdggT6tlM8kwBSoM4+i0bAmgTwg6+pACEBpEKe/RaNgB0J4P82pIOCBJAOe/ZcOAImJODlThIWEkBC8Nl1GQi8N8pYEmibpz/ea3/oz0gAQyPM9iePwMkk4OUqZfwPxZAAgAIrEYhE4GgS8P5m+fd90tUfIpMAgAIrETBAACSw/PnwWdS4dzfnV42Tr8u/H77tPme8T0gA42HNngpE4JQhw7hh5Kiibn4gBOe+te7xMwgCRHFKu0NcQwIYAlW2WT0CMHLUpbr5S13tl6v/u0kd729TCglgGyo8RgQqQYAEUImiKSYR2IYACWAbKjxGBESkBhBIADVomTISgR0IkAB2AMPDRKAGBEgANWiZMhKBHQiQAHYAw8N1I1CL9CSAWjRNOYnAFgRIAFtA4SEiUAsCJIBaNE05icAWBEgAW0DhoboRqEl6EkBN2qasROAVAiSAV4DwLRGoCQESQE3apqxE4BUCJIBXgPBt3QjUJj0JoDaNU14isIEACWADDL4kArUhQAKoTeOUlwhsIEAC2ACDL+tGoEbpSQA1ap0yE4E1AiSANRB8IgI1IkACqFHrlJkIrBEgAayB4FPdCNQqPQmgVs1TbiKgCJAAFAQ+iECtCJAAatU85SYCigAJQEHgo24EapaeBFCz9il79QiQAKqfAgSgZgRIADVrn7JXjwAJoPopUDcAtUv//wAAAP//Y2n9ogAAAAZJREFUAwCa0gmXVTs2XgAAAABJRU5ErkJggg==" alt="JIMON расмий сайты">
+            </div>
+</header>
+
+<header class="nav-header-h5">
+    <div class="logo">
+        <img style="width: 55%;" src="images/index-logo.png" alt="JIMON расмий сайты">
+    </div>
+    <div style="display: flex">
+        <div class="search" onclick="window.location.href='/jimon-localized-site/ky/post_list'">
+            <img src="images/h5-search-icon.png" alt="JIMON расмий сайты">
+        </div>
+        <div class="menu">
+            <img id="menu-icon" style="position: relative;right: -5px;" src="images/h5-menu-icon.png" alt="JIMON расмий сайты">
+        </div>
+    </div>
+</header>
+<div class="i18n-switch i18n-switch--mobile" aria-label="Language"><a class="i18n-switch__link" href="/jimon-localized-site/kk/product_category/">Қаз</a><a class="i18n-switch__link" href="/jimon-localized-site/ru/product_category/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/product_category/">Eng</a><a class="i18n-switch__link active" href="/jimon-localized-site/ky/product_category/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/product_category/">O'z</a></div>
+<style>
+    .nav-modal {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 58px;
+        background: #F5F5F5;
+        padding: 30px;
+        display: none;
+        z-index: 1999;
+    }
+
+    .nav-modal .inner {
+        background: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .nav-modal .inner .item {
+        padding: 15px 10px;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-modal .inner .item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-modal .inner a {
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+<div class="nav-modal" id="nav-modal">
+    <div class="inner">
+        <ul class="menu-list">
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title" onclick="window.location.href = '/jimon-localized-site/ky/'"> Башкы бет</span>
+                                                    </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> JIMON жөнүндө</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_jituanjianjie_h5')">Топ жөнүндө</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_keyanliliang_h5')">Илимий-изилдөө мүмкүнчүлүгү</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_fuwulinian_h5')">Кызмат көрсөтүү философиясы</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_dongshizhangjianjie_h5')">Төрага жөнүндө</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_fazhanlicheng_h5')">Өнүгүү тарыхы</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_jituanrongyu_h5')">Топтун сыйлыктары</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Биздин бренддер</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_guojishiye_h5')">Эл аралык көз караш</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_pinpailinian_h5')">Бренд философиясы</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_zhongyiyaoquanchanyelian_h5')">Кытай медицинасы бренди</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_pinpai_h5')">Ден соолук бренди</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Пландоо жана түзүм</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_chanyejidi_h5')">Өндүрүш базалары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin_h5')">Кытай медицинасы өнүмдөрү</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product#_jinmodajiankang')">Ден соолук өнүмдөрү</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product#_8_')">Өсүмдүк суусундуктары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoteshanshipin_h5')">Тамак-аш кошумчалары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoteshanshipin_h5')">Өсүмдүк экстракты азыктары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoyaozhuang_h5')">Бетке кам көрүү каражаттары</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Жаңылыктар борбору</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-1/')">Компания жаңылыктары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-4/')">Ден соолук темалары</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-5/')">Жаңы медиа борбору</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Башкалар</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/vip_center')">Мүчөлөр аймагы</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/contact_us')">Байланыш</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/law')">Укуктук билдирүү</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                    </ul>
+    </div>
+</div>
+
+        <main>
+        <div class="pc-wrap">
+            <div class="pc-banner">
+                <img style="width: 100%;" src="images/69c227ba8de73.png">
+            </div>
+            <div id="_chanyejidi" class="pc-ppwh" style="padding: 50px 15px 15px;text-align: center;" onclick="window.location.href = '/jimon-localized-site/ky/contact_us#jidixinxi'">
+                <img style="width: 100%" src="images/69e9b278ba21c.png">
+            </div>
+            <div style="padding: 0 15px 15px;" onclick="window.location.href = '/jimon-localized-site/ky/contact_us#jidixinxi'">
+                <img style="width: 100%" src="images/69c3b42367c92.jpg?v=pcatgridjpg20260513" alt="">
+            </div>
+            <div class="pc-modules">
+                                    <a id="_zhongyiyaoquanchanyelianyaopin" href="/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin">
+                        <img style="width: 100%;margin: 50px 0;" src="images/69c48f06ca189.png">
+                    </a>
+                                    <a id="" href="/jimon-localized-site/ky/product#_8_">
+                        <img style="width: 100%;margin: 50px 0;" src="images/69ddae898a2a9.png">
+                    </a>
+                                    <a id="_jinmoteshanshipin" href="/jimon-localized-site/ky/product#_2_">
+                        <img style="width: 100%;margin: 50px 0;" src="images/69dde4b9ea249.png">
+                    </a>
+                                    <a id="_jinmogongnengshipin" href="/jimon-localized-site/ky/product_category#_jinmogongnengshipin">
+                        <img style="width: 100%;margin: 50px 0;" src="images/69ddb1180a552.png">
+                    </a>
+                                    <a id="_jinmoyaozhuang" href="/jimon-localized-site/ky/product#_3_">
+                        <img style="width: 100%;margin: 50px 0;" src="images/69ddb123232be.png">
+                    </a>
+                            </div>
+        </div>
+        <div class="h5-wrap">
+            <div class="banner">
+                <div style="padding: 0 0px 20px;">
+                    <img style="width: 100%;" src="images/69c35dee0b35c.jpg?v=categoryslogan20260513">
+                </div>
+                <div style="padding: 0 15px 15px;" id="_chanyejidi_h5" onclick="toLink('/jimon-localized-site/ky/contact_us#jidixinxi_h5')">
+
+                <img style="width: 100%" src="images/69f00a34878c7.png?v=pcatfix20260512" alt="">
+                </div>
+            </div>
+            <div class="jd" style="text-align: center;padding: 0 5px;" onclick="toLink('/jimon-localized-site/ky/contact_us#jidixinxi_h5')">
+                <img src="images/69c395fbe978f.png?v=pcatgrid20260513" alt="">
+            </div>
+
+            <div class="modules" style="text-align: center;">
+                                    <a id="_zhongyiyaoquanchanyelianyaopin_h5" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin')">
+                        <img src="images/69c39f82963b0.png?v=pcatfix20260512">
+                    </a>
+                                    <a id=" " href="#" onclick="toLink('/jimon-localized-site/ky/product#_8_')">
+                        <img src="images/69ddad9a42599.png?v=pcatfix20260512">
+                    </a>
+                                    <a id="_jinmoteshanshipin_h5" href="#" onclick="toLink('/jimon-localized-site/ky/product#_2_')">
+                        <img src="images/69ddadcdce9f5.png?v=pcatfix20260512">
+                    </a>
+                                    <a id="_jinmogongnengshipin_h5" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmogongnengshipin')">
+                        <img src="images/69ddadd684ef9.png?v=pcatfix20260512">
+                    </a>
+                                    <a id="_jinmoyaozhuang_h5" href="#" onclick="toLink('/jimon-localized-site/ky/product#_3_')">
+                        <img src="images/69ddadd67f7df.png?v=pcatfix20260512">
+                    </a>
+                            </div>
+        </div>
+    </main>
+    <div class="h5-srlj">
+    <div style="text-align: center">
+        <img id="goTop" style="width: 50px;height: 50px" src="images/wap-top.png?v=mobilefix20260512" alt="JIMON расмий сайты">
+    </div>
+
+    <ul class="menu-list">
+                                    <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> JIMON жөнүндө</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_jituanjianjie_h5')">Топ жөнүндө</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_keyanliliang_h5')">Илимий-изилдөө мүмкүнчүлүгү</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_fuwulinian_h5')">Кызмат көрсөтүү философиясы</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_dongshizhangjianjie_h5')">Төрага жөнүндө</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_fazhanlicheng_h5')">Өнүгүү тарыхы</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/walk_in_jimon#_jituanrongyu_h5')">Топтун сыйлыктары</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Биздин бренддер</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_guojishiye_h5')">Эл аралык көз караш</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_pinpailinian_h5')">Бренд философиясы</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_zhongyiyaoquanchanyelian_h5')">Кытай медицинасы бренди</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/we_brands#_pinpai_h5')">Ден соолук бренди</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Пландоо жана түзүм</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_chanyejidi_h5')">Өндүрүш базалары</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin_h5')">Кытай медицинасы өнүмдөрү</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product#_jinmodajiankang')">Ден соолук өнүмдөрү</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product#_8_')">Өсүмдүк суусундуктары</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoteshanshipin_h5')">Тамак-аш кошумчалары</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoteshanshipin_h5')">Өсүмдүк экстракты азыктары</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/product_category#_jinmoyaozhuang_h5')">Бетке кам көрүү каражаттары</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Жаңылыктар борбору</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-5/')">Жаңы медиа борбору</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-1/')">Компания жаңылыктары</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/post_list-cid-4/')">Ден соолук темалары</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Башкалар</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/vip_center')">Мүчөлөр аймагы</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/contact_us')">Байланыш</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ky/law')">Укуктук билдирүү</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                        </ul>
+</div>
+    <div class="h5-footer-wrap" style="padding: 0;">
+        <div class="tel-area">
+            <div class="tel-title">Колдоо телефону</div>
+            <div class="tel" style="font-weight: unset;font-size: 22px;">400-8446-678</div>
+        </div>
+<!--        <div class="logo">-->
+<!--            <img  src="https://oss.jinmujituan.cn/storage/20251203/692fe7351aef5.png?file_name=logo.png" />-->
+<!--        </div>-->
+        <div class="qrcode-wrap">
+            <div class="item">
+                <img src="images/69c0b1f26e196.jpg">
+                <p>Джимон Джимон</p>
+            </div>
+            <div class="item">
+                <img src="images/69c36e9d00bda.jpg">
+                <p>Cultivator микро журналы</p>
+            </div>
+        </div>
+    </div>
+    <div class="h5-footer-info" onclick="window.location.href = 'https://beian.mps.gov.cn/#/query/webSearch'">
+        <div>  Copyright @ 2000 - 2025 JIMON GROUP   </div>
+        <div>Hebei ICP No 11012258-2</div>
+    </div>
+    <div class="h5-footer-nav">
+        <div onclick="window.location.href = '/jimon-localized-site/ky/'">
+            <img src="images/tabbar-01-active.png">
+            <p>Платформанын башкы бети</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ky/walk_in_jimon'">
+            <img src="images/tabbar-02.png">
+            <p>JIMON жөнүндө</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ky/product_category'">
+            <img src="images/tabbar-03.png">
+            <p>Биздин өнүмдөр</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ky/vip_center'">
+            <img src="images/tabbar-04.png">
+            <p>Жеке кабинет</p>
+        </div>
+    </div>
+
+<div class="pc-footer-wrap" style=" height: 360px;background-image: url(images/footer-bg.png);background-repeat: no-repeat;background-size: cover;">
+    <div class="inner" style="height: 300px;max-width: var(--max-width);margin: 0 auto;display: flex;align-items: center;">
+        <div class="left" style="flex-shrink: 0;position: relative;top: -55px;cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ky/'">
+            <img src="images/logo-w.png">
+        </div>
+        <div class="b-navs" style="flex: 1;color: white;display: flex;justify-content: space-around;position: relative;top: 15px;font-size:16px;text-align: center;">
+
+                            <div>
+                                            <div><a href="/jimon-localized-site/ky/walk_in_jimon">JIMON жөнүндө</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ky/walk_in_jimon#_jituanjianjie">Топ жөнүндө</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_keyanliliang">Илимий-изилдөө мүмкүнчүлүгү</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_fuwulinian">Кызмат көрсөтүү философиясы</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_dongshizhangjianjie">Төрага жөнүндө</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_fazhanlicheng">Өнүгүү тарыхы</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/walk_in_jimon#_jituanrongyu">Топтун сыйлыктары</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ky/we_brands">Биздин бренддер</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ky/we_brands#_guojishiye">Эл аралык көз караш</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_pinpailinian">Бренд философиясы</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_zhongyiyaoquanchanyelian">Кытай медицинасы бренди</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/we_brands#_pinpai">Ден соолук бренди</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ky/product_category">Пландоо жана түзүм</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ky/product_category#_chanyejidi">Өндүрүш базалары</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_zhongyiyaoquanchanyelianyaopin">Кытай медицинасы өнүмдөрү</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product#_jinmodajiankang">Ден соолук өнүмдөрү</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product#_8_">Өсүмдүк суусундуктары</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoteshanshipin">Тамак-аш кошумчалары</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoteshanshipin">Өсүмдүк экстракты азыктары</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/product_category#_jinmoyaozhuang">Бетке кам көрүү каражаттары</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ky/post_list">Жаңылыктар борбору</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ky/post_list-cid-5/">Жаңы медиа борбору</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/post_list-cid-1/">Компания жаңылыктары</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/post_list-cid-4/">Ден соолук темалары</a></div>
+                                                            </div>
+                            <div>
+                                                                                            <div><a href="/jimon-localized-site/ky/vip_center">Мүчөлөр аймагы</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/contact_us">Байланыш</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ky/law">Укуктук билдирүү</a></div>
+                                                            </div>
+            
+        </div>
+        <div class="right">
+            <div style="color: white;text-align: right;padding-top: 70px;padding-right: 18px;">
+                <span style="display: block;font-size: 16px;">Колдоо телефону</span>
+                <span style="display: block;padding-bottom: 10px;font-size: 30px;">400-8446-678</span>
+            </div>
+            <div class="qrcode-wrap" style="display: flex;justify-content: center;gap: 30px;text-align: center;color: white;">
+                <div class="item">
+                    <img style="width: 120px;height: 120px;" src="images/69c0b1f26e196.jpg">
+                    <p style="margin-top: 10px;">Джимон Джимон</p>
+                </div>
+                <div class="item">
+                    <img style="width: 120px;height: 120px;" src="images/69c36e9d00bda.jpg">
+                    <p style="margin-top: 10px;">Cultivator микро журналы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-mask">
+    <div class="a1" id="atop"><img src="images/top1.png"></div>
+</div>
+
+<div class="mask_footer" style="background: #10401E;">
+    <div class="w fiex" style="padding-top:20px;">
+        <div class="fiex1 fiex">
+            <div class="fiex1 fiex">
+                <!-- <div class="fiex1"></div> -->
+                <div class="fiex2" style="text-align: center;">
+                    <img style="height: 200px;width: 200px;" src="images/69c0b1f26e196.jpg">
+                    <p style="margin-top: 10px;">Джимон Джимон</p>
+                </div>
+                <div class="fiex2" style="text-align: center;margin-left: 80px">
+                    <img style="height: 200px;width: 200px;" src="images/69c36e9d00bda.jpg">
+                    <p style="margin-top: 10px;">Cultivator микро журналы</p>
+                </div>
+            </div>
+            <div class="f-18 pad-r-50" style="font-size: 19px;">
+                <p>JIMON Group расмий сайты</p>
+                <p>Ден соолук тууралуу көбүрөөк билиңиз</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="m" id="footclose">
+                X
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <div class="pc-footer-info" style="cursor: pointer; padding: 15px;text-align: center;background: #F6F6F6;" onclick="window.location.href = 'https://beian.mps.gov.cn/#/query/webSearch'">
+        <div>Copyright @ 2000 - 2025 JIMON GROUP | Hebei ICP No 11012258-2</div>
+    </div>
+</div>
+<script>
+
+
+
+    var m = document.getElementById('menu-icon');
+var nm = document.getElementById('nav-modal');
+var gs = document.getElementById('g-search');
+var openStatus = false;
+function resetMenu(){
+    if(!openStatus){
+        this.src = 'images/h5-menu-icon.png'
+        nm.style.display = 'block';
+        openStatus = true;
+    }else{
+        this.src = 'images/h5-menu-icon.png'
+        nm.style.display = 'none';
+        openStatus = false;
+    }
+}
+m.onclick = function (){
+    resetMenu();
+}
+
+gs.addEventListener('keyup', function(e){
+    if(e.keyCode == 13){
+        if( !e.target.value){
+            alert('Сураныч, издөө мазмунун киргизиңиз');
+            return;
+        }
+        window.location.href = '/jimon-localized-site/ky/post_list-cid-5/&keyword=' + e.target.value;
+    }
+})
+
+document.getElementById('footclose').addEventListener('click', function() {
+  document.body.classList.remove('openfooter');
+});
+
+
+window.addEventListener('scroll', function() {
+  const wtop = window.scrollY || document.documentElement.scrollTop;
+  if (wtop > 400) {
+    document.body.classList.add('scrolltop');
+  } else {
+    document.body.classList.remove('scrolltop');
+  }
+});
+
+
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+const atop = document.getElementById('atop');
+if (atop) {
+  atop.addEventListener('click', scrollToTop);
+}
+
+const atop3 = document.getElementById('atop3');
+if (atop3) {
+  atop3.addEventListener('click', scrollToTop);
+}
+
+
+function handleScroll() {
+    const distanceToBottom = document.documentElement.scrollHeight
+        - (window.scrollY + window.innerHeight);
+    if (distanceToBottom <= 200) {
+
+        $('.right-mask').css('bottom', '400px');
+
+
+        // window.removeEventListener('scroll', handleScroll);
+    }else{
+        $('.right-mask').css('bottom', '0px');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+
+document.querySelectorAll('.menu-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const menuItem = this.parentElement;
+        const isActive = menuItem.classList.contains('active');
+
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+
+        if (!isActive) {
+            menuItem.classList.add('active');
+        }
+    });
+});
+
+document.getElementById('goTop').addEventListener('click', function () {
+
+    const start = window.pageYOffset;
+    const duration = 500; 
+    const startTime = performance.now();
+
+    function scrollStep(timestamp) {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1); 
+
+
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+        window.scrollTo(0, start * (1 - easeProgress));
+
+        if (progress < 1) {
+            requestAnimationFrame(scrollStep);
+        }
+    }
+
+    requestAnimationFrame(scrollStep);
+});
+</script>
+
+
+<script>
+
+    document.getElementById('video-modal').addEventListener('click', () => {
+        document.getElementById('video-modal').style.display = 'none';
+    })
+
+    function playVideo(url) {
+        document.getElementById('video-player').src = url;
+        document.getElementById('video-modal').style.display = 'flex';
+    }
+
+    $('.menu-item').hover(function () {
+        $(this).find('.sub-menu').stop().animate({
+            height: $(this).find('.sub-menu>div').length * 30 + 'px',
+        }, 100);
+    }, function () {
+        $(this).find('.sub-menu').stop().animate({
+            height: '0px',
+        }, 100);
+    })
+
+
+    function toLink(targetUrl) {
+        event.preventDefault(); 
+        if(targetUrl.includes('#')){
+            const [pagePath, anchor] = targetUrl.split('#');
+
+            sessionStorage.setItem('targetAnchor', anchor);
+
+            window.location.href = pagePath;
+        }else{
+            window.location.href = targetUrl;
+        }
+    }
+
+
+
+    window.addEventListener('load', () => {
+        const targetAnchor = sessionStorage.getItem('targetAnchor');
+        if (targetAnchor) {
+            setTimeout(()=>{
+                const targetElement = document.getElementById(targetAnchor);
+                if (targetElement) {
+
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // const headerOffset = 80;
+                    // const elementPosition = targetElement.getBoundingClientRect().top;
+                    // const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    // window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+
+                sessionStorage.removeItem('targetAnchor');
+            },500);
+
+        }
+    });
+
+
+</script>
+
+
+
+</body></html>
