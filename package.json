@@ -2,12 +2,12 @@
   "name": "jimongroup-static",
   "private": true,
   "version": "1.0.0",
-  "description": "Static localized site (en/ru/kk/ky/uz). No build step.",
+  "description": "Static localized site (en/ru/kk/ky/uz).",
   "scripts": {
-    "dev": "python3 -m http.server 8080 --bind 0.0.0.0",
-    "start": "python3 -m http.server 8080 --bind 0.0.0.0",
-    "build": "python3 tools/build_static.py",
-    "preview": "python3 -m http.server 8080 --bind 0.0.0.0 --directory dist"
+    "dev": "vite --host 0.0.0.0",
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build && python3 tools/build_static.py --keep-existing",
+    "preview": "vite preview --host 0.0.0.0"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
