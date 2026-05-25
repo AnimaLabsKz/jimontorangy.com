@@ -1,0 +1,41 @@
+
+@media (min-width: 768px) {
+    .setup-wrap{
+        max-width: var(--max-width);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .h5-setup{
+        display: none;
+    }
+    .h5-header{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .setup-wrap{
+       width: 100%;
+        max-width: 100% !important;
+    }
+    .setup-wrap img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    main{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .setup-wrap{
+        padding: 15px;
+    }
+    .pc-setup{
+        display: none;
+    }
+    .pc-header{
+        display: none;
+    }
+}
