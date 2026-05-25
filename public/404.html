@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JIMON Group</title>
+  <script>
+    (function () {
+      var p = window.location.pathname;
+      var m = p.match(/^\/(en|ru|kk|ky|uz)(\/.*)?$/);
+      if (m && !/\/$/.test(p) && !/\.[a-z0-9]+$/i.test(p)) {
+        window.location.replace(p + '/' + window.location.search + window.location.hash);
+        return;
+      }
+      if (!m) {
+        window.location.replace('/ru/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Not Found. <a href="/ru/">На главную</a></p>
+</body>
+</html>
