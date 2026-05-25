@@ -88,6 +88,14 @@ def write_sitemap(routes: set[str]) -> None:
     )
 
 
+def write_redirects(routes: set[str]) -> None:
+    lines = [
+        f"{route} {route}/index.html 200\n{route}/ {route}/index.html 200"
+        for route in sorted(routes)
+    ]
+    (DIST / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def write_index_page(routes: set[str]) -> None:
     items = "\n".join(
         f'    <li><a href="{r}/index.html">{r}/index.html</a></li>'
@@ -118,6 +126,7 @@ def main() -> None:
     rewrite_clean_urls(routes)
     write_404_redirect()
     write_sitemap(routes)
+    write_redirects(routes)
     write_index_page(routes)
 
 
