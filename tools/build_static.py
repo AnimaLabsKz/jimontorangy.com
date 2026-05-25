@@ -50,6 +50,32 @@ def rewrite_clean_urls(routes: set[str]) -> None:
             html_file.write_text(rewritten, encoding="utf-8")
 
 
+def write_404_redirect() -> None:
+    (DIST / "404.html").write_text(
+        """<!doctype html>
+<html lang=\"ru\">
+<head>
+  <meta charset=\"utf-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <title>JIMON Group</title>
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/\/$/, '');
+      if (/^\/(en|ru|kk|ky|uz)(\/[^.]*)?$/.test(path)) {
+        window.location.replace(path + '/index.html' + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Not Found</p>
+</body>
+</html>
+""",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -59,6 +85,7 @@ def main() -> None:
         copy_path(name)
 
     rewrite_clean_urls(collect_routes())
+    write_404_redirect()
 
 
 if __name__ == "__main__":
