@@ -2,15 +2,11 @@
   "name": "jimongroup-static",
   "private": true,
   "version": "1.0.0",
-  "description": "Static localized site (en/ru/kk/ky/uz).",
+  "description": "Static localized site (en/ru/kk/ky/uz). No bundler — bun/Lovable just runs the python build script.",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "start": "vite --host 0.0.0.0",
-    "build": "vite build && python3 tools/build_static.py --keep-existing",
-    "preview": "vite preview --host 0.0.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^6.0.3",
-    "vite": "^8.0.14"
+    "build": "python3 tools/build_static.py",
+    "dev": "python3 tools/build_static.py && python3 -m http.server 8080 --bind 0.0.0.0 --directory dist",
+    "start": "python3 tools/build_static.py && python3 -m http.server 8080 --bind 0.0.0.0 --directory dist",
+    "preview": "python3 -m http.server 4173 --bind 0.0.0.0 --directory dist"
   }
 }

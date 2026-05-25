@@ -2,3 +2,5 @@
 output/imagegen/
 
 .env
+__pycache__/
+dist/
