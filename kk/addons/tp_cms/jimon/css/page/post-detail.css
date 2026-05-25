@@ -1,0 +1,35 @@
+main {
+    padding: 0 16px 40px;
+}
+
+main h2 {
+    line-height: 1.45;
+}
+
+.content {
+    line-height: 1.8;
+}
+
+.content img,
+.content video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content video {
+    width: 100%;
+    background: #000;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 12px 88px;
+    }
+
+    main h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+}

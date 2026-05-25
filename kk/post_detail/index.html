@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мақалаға өту - JIMON Group</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #173f24; background: #f6f7f4; }
+    main { max-width: 720px; margin: 14vh auto; background: white; padding: 32px; border-radius: 8px; box-shadow: 0 12px 40px rgba(0,0,0,.08); }
+    a { color: #054B1E; font-weight: 700; }
+  
+    .i18n-switch { display: flex; justify-content: center; gap: 6px; padding: 14px 10px; background: white; border-bottom: 1px solid rgba(5,75,30,.12); font-family: Arial, sans-serif; }
+    .i18n-switch__link { min-width: 36px; height: 28px; display: flex; align-items: center; justify-content: center; padding: 0 8px; color: #173f24; text-decoration: none; font-size: 12px; line-height: 1; border: 1px solid rgba(5,75,30,.18); border-radius: 4px; }
+    .i18n-switch__link:hover, .i18n-switch__link.active { background: #054B1E; color: white; }
+    .i18n-switch--mobile { display: none; }
+    @media (max-width: 768px) { .i18n-switch--desktop { display: none; } .i18n-switch--mobile { display: flex; } }
+
+  </style>
+  <script>
+    (function () {
+      var id = new URLSearchParams(window.location.search).get('id');
+      var target = { '119': '/jimon-localized-site/kk/post_detail-119/', '120': '/jimon-localized-site/kk/post_detail-120/' }[id];
+      if (target) window.location.replace(target + window.location.hash);
+      window.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('article-id').textContent = id || 'көрсетілмеген';
+        if (id) document.getElementById('original-link').href = 'https://www.jinmujituan.cn/post_detail?id=' + encodeURIComponent(id);
+      });
+    })();
+  </script>
+</head>
+<body>
+  <div class="i18n-switch i18n-switch--desktop" aria-label="Language"><a class="i18n-switch__link active" href="/jimon-localized-site/kk/post_detail/">Қаз</a><a class="i18n-switch__link" href="/jimon-localized-site/ru/post_detail/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/post_detail/">Eng</a><a class="i18n-switch__link" href="/jimon-localized-site/ky/post_detail/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/post_detail/">O'z</a></div>
+  <div class="i18n-switch i18n-switch--mobile" aria-label="Language"><a class="i18n-switch__link active" href="/jimon-localized-site/kk/post_detail/">Қаз</a><a class="i18n-switch__link" href="/jimon-localized-site/ru/post_detail/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/post_detail/">Eng</a><a class="i18n-switch__link" href="/jimon-localized-site/ky/post_detail/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/post_detail/">O'z</a></div>
+  <main>
+    <h1>Бұл мақала жергілікті архивте жоқ</h1>
+    <p>Сұралған материалдың id нөмірі: <strong id="article-id"></strong>.</p>
+    <p>Жиналған файлдарда тек 119 және 120 мақалалары бар. <a href="/jimon-localized-site/kk/post_detail-119/">119</a> <a href="/jimon-localized-site/kk/post_detail-120/">120</a>.</p>
+    <p><a id="original-link" href="https://www.jinmujituan.cn/post_list">Түпнұсқа сайттан ашу</a></p>
+    <p><a href="/jimon-localized-site/kk/">Басты бетке</a></p>
+  </main>
+
+</body>
+</html>
