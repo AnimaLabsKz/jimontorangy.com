@@ -1,2 +1,3 @@
 [run]
 dev = "python3 -m http.server 8080 --bind 0.0.0.0"
+build = "rm -rf dist && mkdir -p dist && cp -r index.html en kk ky ru uz src tools .nojekyll README.md dist/"
