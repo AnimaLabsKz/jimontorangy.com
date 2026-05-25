@@ -1,0 +1,1488 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная - Официальный сайт JIMON Co., Ltd.</title>
+    <meta name="keywords" content="Компания JIMON Co., Ltd. (www.jinmujituan.cn) была основана в 1993 году в Аньго, столице древней медицины. На протяжении более 30 лет компания активно участвует во всей цепочке традиционной китайской медицины и здравоохранения, интегрируя услуги по выращиванию растений, исследованиям и разработкам, производству, продажам и здравоохранению. Объединив вековые бренды, такие как Baoding Traditional Chinese Medicine и Beijing Yuhontang, компания имеет около 300 разрешений на лекарства и множество патентов. Ее продукция включает в себя средства традиционной китайской медицины, лекарственные и пищевые гомологичные продукты, здоровое питание, средства по уходу за кожей и косметику, а также управление здравоохранением. Благодаря концепции «золотого качества и совместного использования», расширению возможностей технологий, умному здоровью, основанному на внутренней и глобальной структуре, мы стремимся стать группой индустрии традиционной китайской медицины и здравоохранения мирового класса.">
+    <meta name="description" content="JIMON Co., Ltd. уже много лет активно участвует в индустрии здравоохранения традиционной китайской медицины и имеет полную производственную цепочку и множество основных технических квалификаций. Ее продукция охватывает фармацевтику, здоровое питание, косметику, средства по уходу за кожей и другие области. Он придерживается концепции «золотого качества и обмена», способствует модернизации и интернационализации традиционной китайской медицины и стремится стать заслуживающим доверия эталонным предприятием в отрасли здравоохранения.">
+    <script src="js/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?66e7c63b04eb92b418d1d9faa9272eea";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <link rel="icon" href="/jimon-localized-site/ru/images/index-logo.png">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .video-modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            align-items: center;
+            z-index: 999999;
+            padding: 15px;
+        }
+
+        .video-modal video {
+            max-width: 80vw;
+            max-height: 80vh;
+            margin: 0 auto;
+        }
+
+        .pc-footer-info {
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .pc-footer-info {
+                display: none;
+            }
+        }
+    </style>
+
+        <link rel="stylesheet" href="css/index.css">
+    <style>
+        .nav-header-pc {
+            background: transparent !important;
+            position: relative;
+            z-index: 999;
+        }
+
+        .nav-header-pc .menu-item > a {
+            color: white !important;
+        }
+
+        .pc-wrap {
+            margin-top: -62px !important;
+        }
+
+        .search-wrap {
+            border-color: white !important;
+        }
+
+        .search-wrap input {
+            background: transparent !important;
+            color: white !important;
+        }
+
+        .search-wrap input::placeholder {
+            color: white;
+            font-size: 14px;
+        }
+
+        .banner-mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-mask img {
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-fwln {
+                display: none;
+            }
+
+            .pc-fwln {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .title-wrap, .h5-tswm .title-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+
+            .title-wrap > div, .h5-tswm .title-wrap > div {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+            }
+
+            .title, .h5-tswm .title {
+                font-weight: bold;
+                font-size: 18px;
+                position: relative;
+            }
+
+            .title::before, .h5-tswm .title::before {
+                content: '';
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                position: absolute;
+                background: #1A6635;
+                width: 85%;
+            }
+        }
+
+
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+<div id="video-modal" class="video-modal">
+    <video id="video-player" controls="" src="">
+</video></div>
+        <style>
+    .pc-top-bar {
+        background-image: url(images/top-bar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10vw 10px 0;
+    }
+
+    .pc-top-bar a {
+        color: white;
+        margin-right: 50px;
+    }
+
+    .nav-header-pc .nav-wrap a[href='/'] {
+        color: #002009 !important;
+        font-weight: bold !important;
+    }
+
+    .b-navs > div > div {
+        margin: 5px;
+    }
+
+    .menu-item {
+        text-align: center;
+        position: relative;
+        flex: 1;
+    }
+
+    .menu-item a {
+        color: #000000 !important;
+    }
+
+    .sub-menu {
+        transition: height 0.5s;
+        background: white;
+        text-align: center;
+        box-sizing: border-box;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 30px;
+        width: 140px;
+        border-radius: 5px;
+        height: 0;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    .sub-menu > div {
+        padding: 5px 0;
+    }
+
+    @media (max-width: 1280px) {
+        .nav-empty{
+            display: none;
+        }
+    }
+
+    @media (max-width: 1080px) {
+            .menu-item{
+                flex: unset;
+            }
+    }
+
+    @media (max-width: 890px) {
+        .menu-item a{
+            font-size: 12px;
+        }
+
+
+    }
+
+    .i18n-switch {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-family: Arial, sans-serif;
+    }
+
+    .pc-top-bar .i18n-switch {
+        display: inline-flex;
+        margin-left: 16px;
+        vertical-align: middle;
+    }
+
+    .i18n-switch__link {
+        min-width: 30px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 1;
+        border-radius: 4px;
+        border: 1px solid transparent;
+    }
+
+    .pc-top-bar .i18n-switch__link {
+        color: white;
+        margin-right: 0;
+        border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    .pc-top-bar .i18n-switch__link:hover,
+    .pc-top-bar .i18n-switch__link.active {
+        background: white;
+        color: #054B1E !important;
+    }
+
+    .i18n-switch--mobile {
+        display: none;
+    }
+
+    @media (min-width: 769px) {
+        .i18n-switch--desktop {
+            display: inline-flex;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .i18n-switch--desktop {
+            display: none !important;
+        }
+
+        .i18n-switch--mobile {
+            display: flex;
+            justify-content: center;
+            padding: 8px 10px;
+            background: white;
+            border-bottom: 1px solid rgba(5, 75, 30, 0.12);
+        }
+
+        .i18n-switch--mobile .i18n-switch__link {
+            height: 26px;
+            min-width: 34px;
+            color: #173f24;
+            border-color: rgba(5, 75, 30, 0.18);
+            background: #f6f7f4;
+        }
+
+        .i18n-switch--mobile .i18n-switch__link:hover,
+        .i18n-switch--mobile .i18n-switch__link.active {
+            background: #054B1E;
+            color: white !important;
+        }
+    }
+
+</style>
+<div class="pc-top-bar">
+    <div></div>
+    <div>
+        <a href="/jimon-localized-site/ru/vip_center">Регистрация</a>
+        <a href="/jimon-localized-site/ru/contact_us">Контакты</a>
+    </div>
+        <div class="i18n-switch i18n-switch--desktop" aria-label="Language"><a class="i18n-switch__link" href="/jimon-localized-site/kk/">Қаз</a><a class="i18n-switch__link active" href="/jimon-localized-site/ru/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/">Eng</a><a class="i18n-switch__link" href="/jimon-localized-site/ky/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/">O'z</a></div>
+</div>
+<header class="nav-header-pc">
+    <div class="left-logo">
+        <img src="images/699cfbc6eaa5c.png" alt="Официальный сайт JIMON">
+    </div>
+    <div class="nav-wrap">
+        <div class="nav-empty" style="flex: 1;"></div>
+        <div class="nav-empty" style="flex: 1;"></div>
+                            <div class="menu-item">
+                <a href="/jimon-localized-site/ru/"> Главная</a>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ru/walk_in_jimon"> О JIMON</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie">О группе</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_keyanliliang">Научно-исследовательский потенциал</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_fuwulinian">Принципы сервиса</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie">О председателе</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_fazhanlicheng">История развития</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_jituanrongyu">Награды группы</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ru/we_brands"> Наши бренды</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ru/we_brands#_guojishiye">Международный взгляд</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_pinpailinian">Философия бренда</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian">Бренд китайской медицины</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_pinpai">Бренд здоровья</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ru/product_category"> Планирование и структура</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ru/product_category#_chanyejidi">Производственные базы</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_zhongyiyaoquanchanyelianyaopin">Продукты китайской медицины</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product#_jinmodajiankang">Продукты для здоровья</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product#_8_">Растительные напитки</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoteshanshipin">Пищевые добавки</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoteshanshipin">Продукты с растительными экстрактами</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoyaozhuang">Средства ухода за лицом</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href="/jimon-localized-site/ru/post_list"> Новостной центр</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ru/post_list-cid-1/">Новости компании</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/post_list-cid-4/">Темы о здоровье</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/post_list-cid-5/">Новый медиацентр</a></div>
+                                                                        </div>
+                            </div>
+                    <div class="menu-item">
+                <a href=""> Другое</a>
+                                    <div class="sub-menu">
+                                                                                    <div><a href="/jimon-localized-site/ru/vip_center">Раздел для участников</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/contact_us">Контакты</a></div>
+                                                                                                                <div><a href="/jimon-localized-site/ru/law">Правовое заявление</a></div>
+                                                                        </div>
+                            </div>
+            </div>
+    <div class="search-wrap">
+        <input type="text" placeholder="Поиск" value="" id="g-search">
+                    <img style="width: 7%;" src="data:image/png;base64,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" alt="Официальный сайт JIMON">
+            </div>
+</header>
+
+<header class="nav-header-h5">
+    <div class="logo">
+        <img style="width: 55%;" src="images/index-logo.png" alt="Официальный сайт JIMON">
+    </div>
+    <div style="display: flex">
+        <div class="search" onclick="window.location.href='/jimon-localized-site/ru/post_list'">
+            <img src="images/h5-search-icon.png" alt="Официальный сайт JIMON">
+        </div>
+        <div class="menu">
+            <img id="menu-icon" style="position: relative;right: -5px;" src="images/h5-menu-icon.png" alt="Официальный сайт JIMON">
+        </div>
+    </div>
+</header>
+<div class="i18n-switch i18n-switch--mobile" aria-label="Language"><a class="i18n-switch__link" href="/jimon-localized-site/kk/">Қаз</a><a class="i18n-switch__link active" href="/jimon-localized-site/ru/">Рус</a><a class="i18n-switch__link" href="/jimon-localized-site/en/">Eng</a><a class="i18n-switch__link" href="/jimon-localized-site/ky/">Кыр</a><a class="i18n-switch__link" href="/jimon-localized-site/uz/">O'z</a></div>
+<style>
+    .nav-modal {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 58px;
+        background: #F5F5F5;
+        padding: 30px;
+        display: none;
+        z-index: 1999;
+    }
+
+    .nav-modal .inner {
+        background: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .nav-modal .inner .item {
+        padding: 15px 10px;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-modal .inner .item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-modal .inner a {
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+<div class="nav-modal" id="nav-modal">
+    <div class="inner">
+        <ul class="menu-list">
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title" onclick="window.location.href = '/jimon-localized-site/ru/'"> Главная</span>
+                                                    </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> О JIMON</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie_h5')">О группе</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_keyanliliang_h5')">Научно-исследовательский потенциал</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_fuwulinian_h5')">Принципы сервиса</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie_h5')">О председателе</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_fazhanlicheng_h5')">История развития</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_jituanrongyu_h5')">Награды группы</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Наши бренды</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_guojishiye_h5')">Международный взгляд</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_pinpailinian_h5')">Философия бренда</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian_h5')">Бренд китайской медицины</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_pinpai_h5')">Бренд здоровья</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Планирование и структура</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_chanyejidi_h5')">Производственные базы</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_zhongyiyaoquanchanyelianyaopin_h5')">Продукты китайской медицины</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product#_jinmodajiankang')">Продукты для здоровья</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product#_8_')">Растительные напитки</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoteshanshipin_h5')">Пищевые добавки</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoteshanshipin_h5')">Продукты с растительными экстрактами</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoyaozhuang_h5')">Средства ухода за лицом</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Новостной центр</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-1/')">Новости компании</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-4/')">Темы о здоровье</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-5/')">Новый медиацентр</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                                <li class="menu-item">
+                        <div class="menu-header">
+                                                            <span class="menu-title"> Другое</span>
+                                <div class="menu-icon"></div>
+                                                    </div>
+                                                    <div class="submenu">
+                                <ul class="submenu-list">
+                                                                                                                        <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/vip_center')">Раздел для участников</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/contact_us')">Контакты</a>
+                                            </li>
+                                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/law')">Правовое заявление</a>
+                                            </li>
+                                                                                                            </ul>
+                            </div>
+                                            </li>
+                    </ul>
+    </div>
+</div>
+
+    <main>
+        <div class="pc-wrap">
+            <div class="pc-banner" style="margin-bottom: 50px;">
+                <div class="swiper  banner-swiper banner">
+                    <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                                    <img src="images/69cb8a6ed9ec7.png">
+                                                                                            </div>
+                                                    <div class="swiper-slide">
+                                                                    <img src="images/69a2a5e329459.png">
+                                                                                            </div>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="pc-jm-company">
+                <div class="top-wrap">
+                                            <div class="tag" style="cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian'">Четырехвековые бренды традиционной китайской медицины</div>
+                                            <div class="tag" style="cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ru/product_category#_chanyejidi'">1+6+1 промышленная планировка</div>
+                                            <div class="tag" style="cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_ren2000'">В группе работает около 2000 сотрудников.</div>
+                                            <div class="tag" style="cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie'">33-летие со дня основания бренда</div>
+                                    </div>
+
+                <div class="boss-wrap">
+                    <img class="boss-img" src="images/69cb613013b85.png" alt="Официальный сайт JIMON">
+                    <div class="desc-wrap">
+                        <img class="boss-icon" src="images/boss-icon.png">
+                        <div>
+                            <div class="title-1">Убеждения основателя</div>
+                            <div class="desc-1">
+                                <p style="text-align: justify;"><span style="color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); font-size: 14px;">Мы принимаем «наследование сути, сохранение целостности и инноваций» в качестве наших основных принципов соблюдения требований и действий.<br>Нан стремится развивать великие начинания в области здравоохранения.<br>Расширьте сферу комплексной индустрии здравоохранения и работайте с «золотым качеством и общим обменом».<br>концепцию, расширять возможности наших маркетинговых партнеров и способствовать здоровому развитию традиционной китайской медицины.<br>Подарите миру природную силу восточной фитотерапии и создайте ведущую<br>Ведущая компания, которая ведет индустрию здравоохранения в мире.</span></p>
+                            </div>
+                            <div onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie'" style="margin-top:10px;cursor:pointer;background: #0f6734;color: white;border-radius: 100px;padding: 5px 14px;display: inline-block;font-weight: bold;">
+                                Подробнее →
+                            </div>
+                            <div class="title-2">Столетнее наследство</div>
+                            <div class="desc-2">
+                                <p><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-size: 14px;">Четырехвековые фармацевтические компании, от гениальных продуктов до талантливых людей в команде,<br>Мы всегда нарушаем правила и обеспечиваем будущее отрасли.</span></p>
+                            </div>
+                            <div onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian'" style="margin-top:10px;cursor:pointer;border:1px solid #0f6734 ;color: #0f6734;border-radius: 100px;padding: 5px 14px;display: inline-block;font-weight: bold;">
+                                Подробнее →
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-jm-company-1">
+                <div class="inner">
+                    <div class="desc" style="    font-weight: lighter;">
+                        <b>Компания, движимая двумя колесами традиционной китайской медицины и отрасли здравоохранения, стремится улучшить здоровье населения.</b><br><br>
+
+                        <div>
+                            <p><span style="color: rgb(102, 102, 102); background-color: rgb(234, 234, 234); font-size: 14px;">Наш портфель брендов стремится использовать возможности современных научных исследований для инноваций.<br>Постоянно исследовать неограниченный потенциал традиционной китайской медицины в здравоохранении, профилактике заболеваний и других областях.<br>Мы также стремимся улучшать ежедневное здоровье людей и строить лучший дом во всем мире.</span></p>
+                        </div>
+                    </div>
+                    <div style="position: relative;">
+                        <img src="images/69c275519c630.png" alt="Официальный сайт JIMON">
+                        <div onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_fuwulinian'" style="position: absolute;left: 0 ;z-index:999;bottom:-30px;cursor:pointer;background: #0f6734;color: white;padding: 10px 14px;display: inline-block;font-weight: bold;">
+                            Узнайте больше о нас
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-brand">
+                <div class="img-wrap">
+                    <img src="images/69c48b04e1f31.jpg" alt="Официальный сайт JIMON">
+                </div>
+                <a href="/jimon-localized-site/ru/product#_jinmoteshanshipin" class="more-btn" style="left: calc(50% - 60px)">Посмотреть все бренды компании</a>
+                <div class="brand-items">
+                    <div class="left-arrow" style="width: 50px;height: 50px;background: transparent;">
+                    </div>
+                    <div class="right-arrow" style="width: 50px;height: 50px;background: transparent;">
+                    </div>
+                    <div class="swiper brand-swiper" style="height: 300px;padding-top: 65px;">
+                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c47c516651.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b30ce67c.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69ce3dcf64c44.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c48147e8b9.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b5391965.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69ce3b5900f65.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b64d94b4.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b6e51790.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b7b593ae.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b87bf5a2.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b950d67a.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b9f64999.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69c3a7305d70f.png">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_keyanliliang'" class="pc-ky" style="margin-bottom: 65px;">
+                    <div class="inner">
+
+                        <div class="tj-wrap">
+                            <img style="width: 100%;" src="images/69ef271fe3c32.png">
+                        </div>
+                </div>
+            </div>
+            <div class="pc-zd">
+                <h4 style="text-align: center;margin-bottom: 30px;font-size:20px;font-weight: bold;margin-top: 30px;">
+                    Направления деятельности</h4>
+                <div class="row-1">
+                                                                        <div class="card" style="flex: 1;">
+                                <div class="left">
+                                    <div class="title">Продукты китайской медицины</div>
+                                    <div class="desc" style="font-weight:  unset !important;">
+                                        Имея четыре бренда китайской медицины, каждый из которых имеет более чем 100-летнюю историю, более ста разрешений на лекарства, 30 национальных патентов и 11 эксклюзивных продуктов, мы запустили серию продуктов, основанных на науке традиционной китайской медицины, чтобы стремиться к здоровой жизни для всех.
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="btn" onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian'">
+                                        <img src="images/arrow-right-bold-r.png" alt="Официальный сайт JIMON">
+                                    </div>
+                                    <img src="images/692e5e3f7c678.png" alt="Официальный сайт JIMON">
+                                </div>
+                            </div>
+                                                                                                <div class="card" style="flex: 1;">
+                                <div class="left">
+                                    <div class="title">управление здравоохранением</div>
+                                    <div class="desc" style="font-weight:  unset !important;">
+                                        Под руководством технологических инноваций в традиционной китайской медицине рост серебряной экономики + люди с избыточным весом + количество людей, страдающих хроническими заболеваниями + фон централизованных закупок. Шесть основных серий продукции крупного бренда здоровья: «лекарства, здоровое питание, чайные напитки, специальные диетические препараты, медицинское оборудование, уход и косметика».
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="btn" onclick="window.location.href = '/jimon-localized-site/ru/product#_jinmodajiankang'">
+                                        <img src="images/arrow-right-bold-r.png" alt="Официальный сайт JIMON">
+                                    </div>
+                                    <img src="images/692e5e4eaf94a.png" alt="Официальный сайт JIMON">
+                                </div>
+                            </div>
+                                                                                                                                                                                                </div>
+                <div class="row-1">
+                                                                                                                                                                <div class="card" style="flex: 1;">
+                                <div class="left" style="padding: 10px;">
+                                    <div class="title">Глобальная перспектива</div>
+                                    <div class="desc" style="font-weight:  unset !important;">
+                                    В настоящее время мы установили отношения сотрудничества с Сингапуром, Южной Кореей, Японией, Австралией, Канадой, Индонезией, Малайзией, Словакией и другими странами. Масло семян клена продается в Сингапуре и Малайзии и получило широкое признание и репутацию среди потребителей.
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="btn" onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_guojishiye'">
+                                        <img src="images/arrow-right-bold-r.png" alt="Официальный сайт JIMON">
+                                    </div>
+                                    <img src="images/69c63b377ca3a.png" alt="Официальный сайт JIMON">
+                                </div>
+                            </div>
+                                                                                                <div class="card" style="flex: 1;">
+                                <div class="left" style="padding: 10px;">
+                                    <div class="title">Сила научных исследований</div>
+                                    <div class="desc" style="font-weight:  unset !important;">
+                                    Налажено сотрудничество с 6 крупными научно-исследовательскими учреждениями, включая Тяньцзиньский университет традиционной китайской медицины и Китайскую академию китайских медицинских наук, создан Хэбэйский научно-исследовательский институт технологий промышленности традиционной китайской медицины и достигнуто стратегическое сотрудничество с Шанхайской суперлабораторией в 2025 году.
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="btn" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_qjm'">
+                                        <img src="images/arrow-right-bold-r.png" alt="Официальный сайт JIMON">
+                                    </div>
+                                    <img src="images/692e5e76f01f3.png" alt="Официальный сайт JIMON">
+                                </div>
+                            </div>
+                                                                                                <div class="card" style="flex: 1;">
+                                <div class="left" style="padding: 10px;">
+                                    <div class="title">социальная ответственность</div>
+                                    <div class="desc" style="font-weight:  unset !important;">
+                                    В общей сложности было пожертвовано материалов на сумму более 50 миллионов юаней, и было построено более 10 000 акров посадочных баз традиционной китайской медицины для стимулирования местного экономического развития.
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="btn" onclick="window.location.href = 'http://hxsc.ccbnd.com/ru/post_detail/?id=69'">
+                                        <img src="images/arrow-right-bold-r.png" alt="Официальный сайт JIMON">
+                                    </div>
+                                    <img src="images/692e5e7a820cd.png" alt="Официальный сайт JIMON">
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <div class="pc-jrwm" onclick="window.location.href = '/jimon-localized-site/ru/vip_center'">
+                <img style="width: 100%" src="images/69c27c4b8ed02.png" alt="Официальный сайт JIMON">
+                <a class="btn" href="/jimon-localized-site/ru/vip_center">Присоединиться</a>
+            </div>
+            <div class="pc-xwzx">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div>
+                            <div class="title" style="font-weight: bold;font-size: 26px;">Новостной центр</div>
+                            <div class="sub-title" style="font-weight: bold;">News Center</div>
+                        </div>
+                        <a href="/jimon-localized-site/ru/post_list">Еще ></a>
+                    </div>
+                    <div class="list" style="gap: 150px;margin-top: 52px;">
+                                                    <div style="flex: 1;cursor: pointer;" onclick="window.location.href='/jimon-localized-site/ru/post_detail-119/'">
+                                <img style="height: 250px;" src="images/697c39fc216a5.png">
+                                <h4 style="font-weight: bold;">«Родилось от вас «Золото» — свет веры для трудящихся» увенчалось славой, а качество золота и дерева было еще раз авторитетно удостоверено.</h4>
+                                <h5></h5>
+                            </div>
+                                                    <div style="flex: 1;cursor: pointer;" onclick="window.location.href='/jimon-localized-site/ru/post_detail-120/'">
+                                <img style="height: 250px;" src="images/697c3b21d7fd4.jpg">
+                                <h4 style="font-weight: bold;">Качество завоевывает награды, а репутация увенчается | JIMON выиграла 13-ю награду правительства провинции Хэбэй за качество за качество!</h4>
+                                <h5></h5>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            <div style="background: #f0f1ee;padding: 0 0 50px 0;">
+                <div class="pc-srlj">
+                    <div class="title-wrap">
+                        <div style="display: flex;align-items: center;">
+                            <div class="title" style="font-weight: bold;font-size: 26px;">Изучите нас</div>
+                            <div class="sub-title" style="font-weight: bold;padding-left:15px;">Explore Us</div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="card-2" onclick="playVideo('https://oss.jinmujituan.cn/storage/20260409/6475c9e5ce29273d84f31ac767b77617.mp4?file_name=%E6%BA%AF%E6%BA%90.mp4')">
+                            <img src="images/69c4f8da5dd9f.png">
+                        </div>
+                        <div class="card-2" onclick="playVideo('https://oss.jinmujituan.cn/storage/20260409/16143bb8bc09fec0be8d20bdd770f950.mp4?file_name=%E5%8D%83%E5%B9%B4%E5%B0%8F%E8%8D%89.mp4')">
+                            <img src="images/69c4f8e281be6.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h5-wrap">
+            <div class="h5-banner">
+                <img src="images/69cb884d3eb29.png" alt="Официальный сайт JIMON">
+            </div>
+            <div class="top-wrap" style="margin: 25px 15px 15px;">
+                                    <div class="tag" style="cursor: pointer;font-size: 11px;padding: 8px 0;font-weight: unset;" onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian_h5'">
+                        четыреста лет<br>Проверенный временем бренд традиционной китайской медицины
+                    </div>
+                                    <div class="tag" style="cursor: pointer;font-size: 11px;padding: 8px 0;font-weight: unset;" onclick="window.location.href = '/jimon-localized-site/ru/product_category#_chanyejidi_h5'">
+                        1+6+1<br>Промышленная планировка
+                    </div>
+                                    <div class="tag" style="cursor: pointer;font-size: 11px;padding: 8px 0;font-weight: unset;" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_ren2000_h5'">
+                        Сотрудники группы<br>почти 2000 человек
+                    </div>
+                                    <div class="tag" style="cursor: pointer;font-size: 11px;padding: 8px 0;font-weight: unset;" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie_h5'">
+                        Создание бренда<br>33-я годовщина
+                    </div>
+                            </div>
+            <div style="padding: 10px;">
+                <img style="width: 100%;" src="images/69cb60cd9cfc9.png" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie_h5'">
+                <img style="width: 100%;margin-top: 20px;" src="images/69c274a4b8d7d.png" onclick="window.location.href = '/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian_h5'">
+            </div>
+            <div class="pc-brand" style="padding-bottom: 40px;">
+                <div class="img-wrap" style="padding: 0 15px">
+                    <img src="images/69c35eb246470.png" alt="Официальный сайт JIMON">
+                </div>
+                <a href="/jimon-localized-site/ru/product#_jinmoteshanshipin" class="more-btn" style="left: calc(50% - 60px);bottom: 32px !important;">Посмотреть все бренды компании</a>
+                <div class="brand-items" style="margin: 0 10px;">
+                    <div class="left-arrow" style="width: 30px;height: 30px;padding: 0;border-radius: 100%;background: white;text-align: center;line-height: 30px;">
+                        <img style="position: relative;top: -2px;" src="images/arrow-left-bold.png">
+                    </div>
+                    <div class="right-arrow" style="width: 30px;height: 30px;padding: 0;border-radius: 100%;background: white;text-align: center;line-height: 30px;">
+                        <img style="position: relative;top: -2px;" src="images/arrow-right-bold.png">
+                    </div>
+                    <div class="swiper brand-swiper" style="height: 280px;padding-top: 70px;">
+                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c47c516651.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b30ce67c.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69ce3dcf64c44.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c48147e8b9.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b5391965.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69ce3b5900f65.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b64d94b4.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b6e51790.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b7b593ae.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b87bf5a2.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b950d67a.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/697c4b9f64999.png">
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide" onclick="window.location.href = '/jimon-localized-site/ru/product'">
+                                    <div class="item" style="height: 180px;cursor: pointer;margin-bottom: 0;">
+                                        <img style="width: 93%;" src="images/69c3a7305d70f.png">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-jm-company-1">
+                <div style="position: relative;    border-radius: 16px;overflow: hidden;">
+                    <img src="images/69c35f8da6c30.png" alt="Официальный сайт JIMON">
+                    <div onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_fuwulinian'" style="position: absolute;left: 0 ;z-index:999;bottom:0;cursor:pointer;background: #054B1E;color: white;padding: 10px 14px;display: inline-block;font-weight: bold;">
+                        Узнайте больше о нас
+                    </div>
+
+                </div>
+                <div class="desc" style=" font-size: 13px;color: black;font-weight: 400;line-height: 1.5;padding: 20px 0px 10px;position: relative;left: 3vw;box-sizing: border-box;">
+                    <div class="ttt">
+                        <style>
+                            .ttt {
+                                margin-bottom: 15px;
+                            }
+
+                            .ttt p {
+                                margin-bottom: 0;
+                            }
+                        </style>
+                        <p><span style="color: rgb(0, 0, 0); font-size: 14px;">Компания, движимая двумя колесами традиционной китайской медицины и индустрии здравоохранения.</span></p><p><span style="color: rgb(0, 0, 0); font-size: 14px;"><strong>Компания, занимающаяся улучшением национального здравоохранения.</strong></span></p>
+                    </div>
+                    <p><span style="color: rgb(0, 0, 0); font-size: 14px;">Наш портфель брендов стремится использовать возможности современных научных исследований для инноваций и постоянного изучения неограниченного потенциала традиционной китайской медицины в области здоровья и хорошего самочувствия, профилактики и лечения заболеваний. Мы также стремимся улучшать ежедневное здоровье людей и строить лучший дом во всем мире.</span></p>
+                </div>
+            </div>
+            <div class="h5-ky" style="background-image: unset;min-height: 0;" onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon#_keyanliliang_h5'">
+                <div class="title-wrap">
+                    <div style="padding-left: 10px;margin-bottom: 10px;">
+                        <div class="title" style="font-size: 18px;">Основанный на исследованиях</div>
+                        <div class="sub-title" style="text-transform: unset;color: #666666;">Research-Driven</div>
+                    </div>
+                </div>
+                <div style="text-align: center;padding: 0 10px;">
+                    <img src="images/69cc966a2287d.png" style="width: 100%;">
+                </div>
+
+                <div class="data-wrap" style="padding: 30px 15px 0;min-height: 0;margin-top: -20px;">
+                    <img src="images/69ef272821771.png" style="width: 100%;">
+                </div>
+            </div>
+            <div class="h5-jrwm" style="padding: 0 10px;margin-top: 20px;" onclick="window.location.href = '/jimon-localized-site/ru/vip_center'">
+                <img style="width: 100%" src="images/69c348558cae3.png" alt="Официальный сайт JIMON">
+                <a class="btn" href="/jimon-localized-site/ru/vip_center">Присоединиться</a>
+            </div>
+
+            <div class="h5-xwzx">
+                <div class="title-wrap" style="margin-bottom: 30px;">
+                    <div>
+                        <div class="title">Новостной центр</div>
+                        <div class="sub-title">News Center</div>
+                    </div>
+                    <a href="/jimon-localized-site/ru/post_list">Еще</a>
+                </div>
+                <div class="list">
+                                            <div class="item">
+                            <div class="left">
+                                <img style="width: 100%;height: 100%;" src="images/697c39fc216a5.png">
+                            </div>
+                            <div class="right">
+                                <h4 class="ellipsis-1">«Родилось от вас «Золото» — свет веры для трудящихся» увенчалось славой, а качество золота и дерева было еще раз авторитетно удостоверено.</h4>
+                                <h5 class="ellipsis-2"></h5>
+                                <a href="/jimon-localized-site/ru/post_detail-119/">Подробнее →</a>
+                            </div>
+                        </div>
+                                            <div class="item">
+                            <div class="left">
+                                <img style="width: 100%;height: 100%;" src="images/697c3b21d7fd4.jpg">
+                            </div>
+                            <div class="right">
+                                <h4 class="ellipsis-1">Качество завоевывает награды, а репутация увенчается | JIMON выиграла 13-ю награду правительства провинции Хэбэй за качество за качество!</h4>
+                                <h5 class="ellipsis-2"></h5>
+                                <a href="/jimon-localized-site/ru/post_detail-120/">Подробнее →</a>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+
+            <div class="h5-tswm" style="padding: 15px;">
+                <div class="pc-srlj">
+                    <div class="title-wrap" style="margin-bottom: 30px;">
+                        <div>
+                            <div class="title">Изучите нас</div>
+                            <div class="sub-title">Explore Us</div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="card-2" style="margin-bottom: 25px" onclick="playVideo('https://oss.jinmujituan.cn/storage/20260409/6475c9e5ce29273d84f31ac767b77617.mp4?file_name=%E6%BA%AF%E6%BA%90.mp4')">
+                            <img style="width: 100%;" src="images/69c360f313463.png">
+                        </div>
+                        <div class="card-2" onclick="playVideo('https://oss.jinmujituan.cn/storage/20260409/16143bb8bc09fec0be8d20bdd770f950.mp4?file_name=%E5%8D%83%E5%B9%B4%E5%B0%8F%E8%8D%89.mp4')">
+                            <img style="width: 100%;" src="images/69c360f9a8438.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="h5-srlj">
+    <div style="text-align: center">
+        <img id="goTop" style="width: 50px;height: 50px" src="images/wap-top.png?v=mobilefix20260512" alt="Официальный сайт JIMON">
+    </div>
+
+    <ul class="menu-list">
+                                    <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> О JIMON</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie_h5')">О группе</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_keyanliliang_h5')">Научно-исследовательский потенциал</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_fuwulinian_h5')">Принципы сервиса</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie_h5')">О председателе</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_fazhanlicheng_h5')">История развития</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/walk_in_jimon#_jituanrongyu_h5')">Награды группы</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Наши бренды</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_guojishiye_h5')">Международный взгляд</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_pinpailinian_h5')">Философия бренда</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian_h5')">Бренд китайской медицины</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/we_brands#_pinpai_h5')">Бренд здоровья</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Планирование и структура</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_chanyejidi_h5')">Производственные базы</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_zhongyiyaoquanchanyelianyaopin_h5')">Продукты китайской медицины</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product#_jinmodajiankang')">Продукты для здоровья</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product#_8_')">Растительные напитки</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoteshanshipin_h5')">Пищевые добавки</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoteshanshipin_h5')">Продукты с растительными экстрактами</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" onclick="resetMenu()" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/product_category#_jinmoyaozhuang_h5')">Средства ухода за лицом</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Новостной центр</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-5/')">Новый медиацентр</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-1/')">Новости компании</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/post_list-cid-4/')">Темы о здоровье</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                                                <li class="menu-item">
+                    <div class="menu-header">
+                        <span class="menu-title"> Другое</span>
+                        <div class="menu-icon"></div>
+                    </div>
+                                            <div class="submenu">
+                            <ul class="submenu-list">
+                                                                                                            <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/vip_center')">Раздел для участников</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/contact_us')">Контакты</a>
+                                        </li>
+                                                                                                                                                <li class="submenu-item" style="font-size: 12px;"><a style="font-size: 12px;color: #173f24 !important;font-weight: unset;" href="#" onclick="toLink('/jimon-localized-site/ru/law')">Правовое заявление</a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </li>
+                        </ul>
+</div>
+    <div class="h5-footer-wrap" style="padding: 0;">
+        <div class="tel-area">
+            <div class="tel-title">Горячая линия</div>
+            <div class="tel" style="font-weight: unset;font-size: 22px;">400-8446-678</div>
+        </div>
+<!--        <div class="logo">-->
+<!--            <img  src="https://oss.jinmujituan.cn/storage/20251203/692fe7351aef5.png?file_name=logo.png" />-->
+<!--        </div>-->
+        <div class="qrcode-wrap">
+            <div class="item">
+                <img src="images/69c0b1f26e196.jpg">
+                <p>ДЖИМОН, фермер</p>
+            </div>
+            <div class="item">
+                <img src="images/69c36e9d00bda.jpg">
+                <p>Микрожурнал «Культиватор»</p>
+            </div>
+        </div>
+    </div>
+    <div class="h5-footer-info" onclick="window.location.href = 'https://beian.mps.gov.cn/#/query/webSearch'">
+        <div>  Copyright @ 2000 - 2025 JIMON GROUP   </div>
+        <div>Хэбэй ИСП № 11012258-2</div>
+    </div>
+    <div class="h5-footer-nav">
+        <div onclick="window.location.href = '/jimon-localized-site/ru/'">
+            <img src="images/tabbar-01-active.png">
+            <p>Главная платформы</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ru/walk_in_jimon'">
+            <img src="images/tabbar-02.png">
+            <p>О JIMON</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ru/product_category'">
+            <img src="images/tabbar-03.png">
+            <p>Наши продукты</p>
+        </div>
+        <div onclick="window.location.href = '/jimon-localized-site/ru/vip_center'">
+            <img src="images/tabbar-04.png">
+            <p>Личный кабинет</p>
+        </div>
+    </div>
+
+<div class="pc-footer-wrap" style=" height: 360px;background-image: url(images/footer-bg.png);background-repeat: no-repeat;background-size: cover;">
+    <div class="inner" style="height: 300px;max-width: var(--max-width);margin: 0 auto;display: flex;align-items: center;">
+        <div class="left" style="flex-shrink: 0;position: relative;top: -55px;cursor: pointer;" onclick="window.location.href = '/jimon-localized-site/ru/'">
+            <img src="images/logo-w.png">
+        </div>
+        <div class="b-navs" style="flex: 1;color: white;display: flex;justify-content: space-around;position: relative;top: 15px;font-size:16px;text-align: center;">
+
+                            <div>
+                                            <div><a href="/jimon-localized-site/ru/walk_in_jimon">О JIMON</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ru/walk_in_jimon#_jituanjianjie">О группе</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_keyanliliang">Научно-исследовательский потенциал</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_fuwulinian">Принципы сервиса</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_dongshizhangjianjie">О председателе</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_fazhanlicheng">История развития</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/walk_in_jimon#_jituanrongyu">Награды группы</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ru/we_brands">Наши бренды</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ru/we_brands#_guojishiye">Международный взгляд</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_pinpailinian">Философия бренда</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_zhongyiyaoquanchanyelian">Бренд китайской медицины</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/we_brands#_pinpai">Бренд здоровья</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ru/product_category">Планирование и структура</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ru/product_category#_chanyejidi">Производственные базы</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_zhongyiyaoquanchanyelianyaopin">Продукты китайской медицины</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product#_jinmodajiankang">Продукты для здоровья</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product#_8_">Растительные напитки</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoteshanshipin">Пищевые добавки</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoteshanshipin">Продукты с растительными экстрактами</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/product_category#_jinmoyaozhuang">Средства ухода за лицом</a></div>
+                                                            </div>
+                            <div>
+                                            <div><a href="/jimon-localized-site/ru/post_list">Новостной центр</a></div>
+                                                                                            <div><a href="/jimon-localized-site/ru/post_list-cid-5/">Новый медиацентр</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/post_list-cid-1/">Новости компании</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/post_list-cid-4/">Темы о здоровье</a></div>
+                                                            </div>
+                            <div>
+                                                                                            <div><a href="/jimon-localized-site/ru/vip_center">Раздел для участников</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/contact_us">Контакты</a></div>
+                                                                                                <div><a href="/jimon-localized-site/ru/law">Правовое заявление</a></div>
+                                                            </div>
+            
+        </div>
+        <div class="right">
+            <div style="color: white;text-align: right;padding-top: 70px;padding-right: 18px;">
+                <span style="display: block;font-size: 16px;">Горячая линия</span>
+                <span style="display: block;padding-bottom: 10px;font-size: 30px;">400-8446-678</span>
+            </div>
+            <div class="qrcode-wrap" style="display: flex;justify-content: center;gap: 30px;text-align: center;color: white;">
+                <div class="item">
+                    <img style="width: 120px;height: 120px;" src="images/69c0b1f26e196.jpg">
+                    <p style="margin-top: 10px;">ДЖИМОН, фермер</p>
+                </div>
+                <div class="item">
+                    <img style="width: 120px;height: 120px;" src="images/69c36e9d00bda.jpg">
+                    <p style="margin-top: 10px;">Микрожурнал «Культиватор»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-mask">
+    <div class="a1" id="atop"><img src="images/top1.png"></div>
+</div>
+
+<div class="mask_footer" style="background: #10401E;">
+    <div class="w fiex" style="padding-top:20px;">
+        <div class="fiex1 fiex">
+            <div class="fiex1 fiex">
+                <!-- <div class="fiex1"></div> -->
+                <div class="fiex2" style="text-align: center;">
+                    <img style="height: 200px;width: 200px;" src="images/69c0b1f26e196.jpg">
+                    <p style="margin-top: 10px;">ДЖИМОН, фермер</p>
+                </div>
+                <div class="fiex2" style="text-align: center;margin-left: 80px">
+                    <img style="height: 200px;width: 200px;" src="images/69c36e9d00bda.jpg">
+                    <p style="margin-top: 10px;">Микрожурнал «Культиватор»</p>
+                </div>
+            </div>
+            <div class="f-18 pad-r-50" style="font-size: 19px;">
+                <p>Официальный сайт JIMON Group</p>
+                <p>Узнайте больше историй о здоровье</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="m" id="footclose">
+                X
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <div class="pc-footer-info" style="cursor: pointer; padding: 15px;text-align: center;background: #F6F6F6;" onclick="window.location.href = 'https://beian.mps.gov.cn/#/query/webSearch'">
+        <div>Copyright @ 2000 - 2025 ДЖИМОН ГРУПП | Хэбэй ИСП № 11012258-2</div>
+    </div>
+</div>
+<script>
+
+
+
+    var m = document.getElementById('menu-icon');
+var nm = document.getElementById('nav-modal');
+var gs = document.getElementById('g-search');
+var openStatus = false;
+function resetMenu(){
+    if(!openStatus){
+        this.src = 'images/h5-menu-icon.png'
+        nm.style.display = 'block';
+        openStatus = true;
+    }else{
+        this.src = 'images/h5-menu-icon.png'
+        nm.style.display = 'none';
+        openStatus = false;
+    }
+}
+m.onclick = function (){
+    resetMenu();
+}
+
+gs.addEventListener('keyup', function(e){
+    if(e.keyCode == 13){
+        if( !e.target.value){
+            alert('Пожалуйста, введите содержание поиска');
+            return;
+        }
+        window.location.href = '/jimon-localized-site/ru/post_list-cid-5/&keyword=' + e.target.value;
+    }
+})
+
+document.getElementById('footclose').addEventListener('click', function() {
+  document.body.classList.remove('openfooter');
+});
+
+
+window.addEventListener('scroll', function() {
+  const wtop = window.scrollY || document.documentElement.scrollTop;
+  if (wtop > 400) {
+    document.body.classList.add('scrolltop');
+  } else {
+    document.body.classList.remove('scrolltop');
+  }
+});
+
+
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+const atop = document.getElementById('atop');
+if (atop) {
+  atop.addEventListener('click', scrollToTop);
+}
+
+const atop3 = document.getElementById('atop3');
+if (atop3) {
+  atop3.addEventListener('click', scrollToTop);
+}
+
+
+function handleScroll() {
+    const distanceToBottom = document.documentElement.scrollHeight
+        - (window.scrollY + window.innerHeight);
+    if (distanceToBottom <= 200) {
+
+        $('.right-mask').css('bottom', '400px');
+
+
+        // window.removeEventListener('scroll', handleScroll);
+    }else{
+        $('.right-mask').css('bottom', '0px');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+
+document.querySelectorAll('.menu-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const menuItem = this.parentElement;
+        const isActive = menuItem.classList.contains('active');
+
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+
+        if (!isActive) {
+            menuItem.classList.add('active');
+        }
+    });
+});
+
+document.getElementById('goTop').addEventListener('click', function () {
+
+    const start = window.pageYOffset;
+    const duration = 500; 
+    const startTime = performance.now();
+
+    function scrollStep(timestamp) {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1); 
+
+
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+        window.scrollTo(0, start * (1 - easeProgress));
+
+        if (progress < 1) {
+            requestAnimationFrame(scrollStep);
+        }
+    }
+
+    requestAnimationFrame(scrollStep);
+});
+</script>
+
+
+<script>
+
+    document.getElementById('video-modal').addEventListener('click', () => {
+        document.getElementById('video-modal').style.display = 'none';
+    })
+
+    function playVideo(url) {
+        document.getElementById('video-player').src = url;
+        document.getElementById('video-modal').style.display = 'flex';
+    }
+
+    $('.menu-item').hover(function () {
+        $(this).find('.sub-menu').stop().animate({
+            height: $(this).find('.sub-menu>div').length * 30 + 'px',
+        }, 100);
+    }, function () {
+        $(this).find('.sub-menu').stop().animate({
+            height: '0px',
+        }, 100);
+    })
+
+
+    function toLink(targetUrl) {
+        event.preventDefault(); 
+        if(targetUrl.includes('#')){
+            const [pagePath, anchor] = targetUrl.split('#');
+
+            sessionStorage.setItem('targetAnchor', anchor);
+
+            window.location.href = pagePath;
+        }else{
+            window.location.href = targetUrl;
+        }
+    }
+
+
+
+    window.addEventListener('load', () => {
+        const targetAnchor = sessionStorage.getItem('targetAnchor');
+        if (targetAnchor) {
+            setTimeout(()=>{
+                const targetElement = document.getElementById(targetAnchor);
+                if (targetElement) {
+
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // const headerOffset = 80;
+                    // const elementPosition = targetElement.getBoundingClientRect().top;
+                    // const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    // window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+
+                sessionStorage.removeItem('targetAnchor');
+            },500);
+
+        }
+    });
+
+
+</script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        window.addEventListener('load', function (e) {
+
+            new Swiper('.banner', {
+                autoplay: {delay: 4000},
+                loop: true
+            });
+
+            new Swiper('.brand-swiper', {
+                autoplay: {
+                    delay: 4000,
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.right-arrow',
+                    prevEl: '.left-arrow',
+                },
+                breakpoints: {
+
+                    0: {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                    },
+
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 15,
+                    }
+                }
+            });
+
+        })
+
+    </script>
+
+
+</body></html>
