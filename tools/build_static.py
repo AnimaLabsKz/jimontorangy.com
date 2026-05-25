@@ -52,7 +52,7 @@ def rewrite_clean_urls(routes: set[str]) -> None:
 
 def write_404_redirect() -> None:
     (DIST / "404.html").write_text(
-        """<!doctype html>
+        r"""<!doctype html>
 <html lang=\"ru\">
 <head>
   <meta charset=\"utf-8\">
