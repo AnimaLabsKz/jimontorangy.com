@@ -76,6 +76,36 @@ def write_404_redirect() -> None:
     )
 
 
+def write_sitemap(routes: set[str]) -> None:
+    base = "https://jimontorangy.com"
+    body = "\n".join(
+        f"  <url><loc>{base}{r}/index.html</loc></url>" for r in sorted(routes)
+    )
+    (DIST / "sitemap.xml").write_text(
+        f'<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}\n</urlset>\n',
+        encoding="utf-8",
+    )
+
+
+def write_index_page(routes: set[str]) -> None:
+    items = "\n".join(
+        f'    <li><a href="{r}/index.html">{r}/index.html</a></li>'
+        for r in sorted(routes)
+    )
+    (DIST / "pages.html").write_text(
+        f"""<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>All pages</title>
+<style>body{{font-family:system-ui;padding:2rem;max-width:800px;margin:auto}}
+li{{margin:.25rem 0}}a{{color:#0a66c2;text-decoration:none}}a:hover{{text-decoration:underline}}</style>
+</head><body><h1>All pages</h1><ul>
+{items}
+</ul></body></html>
+""",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -84,8 +114,11 @@ def main() -> None:
     for name in ("index.html", ".nojekyll", "README.md", *LOCALES):
         copy_path(name)
 
-    rewrite_clean_urls(collect_routes())
+    routes = collect_routes()
+    rewrite_clean_urls(routes)
     write_404_redirect()
+    write_sitemap(routes)
+    write_index_page(routes)
 
 
 if __name__ == "__main__":
