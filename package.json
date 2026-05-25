@@ -8,5 +8,9 @@
     "start": "python3 -m http.server 8080 --bind 0.0.0.0",
     "build": "python3 tools/build_static.py",
     "preview": "python3 -m http.server 8080 --bind 0.0.0.0 --directory dist"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
   }
 }
