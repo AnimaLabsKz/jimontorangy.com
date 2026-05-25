@@ -1,0 +1,112 @@
+@media (min-width: 768px) {
+    .h5-logo,.h5-contact,.h5-desc{
+        display: none;
+    }
+    .pc-logo {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .pc-desc {
+        max-width: var(--max-width);
+        margin: 30px auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #666666;
+
+    }
+
+    .pc-desc h4 {
+        font-size: 16px;
+        line-height: 2;
+        font-weight: bold;
+    }
+
+    .pc-contact {
+        max-width: var(--max-width);
+        margin: 30px auto;
+    }
+
+    .pc-contact h6 {
+        font-weight: bold;
+    }
+}
+
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+    .pc-logo,.pc-desc,.pc-contact {
+        display: none;
+    }
+
+    .h5-logo {
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .h5-logo .logo{
+        position: relative;
+        width: 80%;
+    }
+
+    .h5-logo .bg {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .h5-desc{
+        padding: 15px;
+    }
+    .h5-desc .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h5-desc .top h3{
+        color: var(--jm-primary-color);
+    }
+    .h5-desc  p{
+        color: #666666;
+    }
+    .h5-desc .top img{
+        width: 50px;
+        height: 50px;
+    }
+    .h5-contact{
+        padding: 15px;
+    }
+    .h5-contact .icon{
+        width: 60px;
+    }
+    .h5-contact h3{
+        border-bottom: 1px solid #999999;
+        padding-bottom: 25px;
+    }
+    .h5-contact .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        border-bottom: 1px solid #999999;
+        padding: 15px 0;
+    }
+
+    .h5-contact .value{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+}

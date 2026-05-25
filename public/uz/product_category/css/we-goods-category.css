@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+  .pc-banner {
+    margin-bottom: 100px;
+  }
+  .h5-wrap {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .pc-wrap {
+    display: none;
+  }
+  .h5-wrap .jd {
+    padding: 15px;
+  }
+  .h5-wrap .jd img {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .h5-wrap .modules {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .h5-wrap .modules img {
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
