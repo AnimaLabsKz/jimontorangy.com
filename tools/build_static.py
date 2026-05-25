@@ -1,6 +1,7 @@
 from pathlib import Path
 import re
 import shutil
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,8 @@ def copy_path(name: str) -> None:
     if not source.exists():
         return
     if source.is_dir():
+        if target.exists():
+            shutil.rmtree(target)
         shutil.copytree(source, target)
     else:
         shutil.copy2(source, target)
@@ -115,9 +118,10 @@ li{{margin:.25rem 0}}a{{color:#0a66c2;text-decoration:none}}a:hover{{text-decora
 
 
 def main() -> None:
-    if DIST.exists():
+    keep_existing = "--keep-existing" in sys.argv
+    if DIST.exists() and not keep_existing:
         shutil.rmtree(DIST)
-    DIST.mkdir()
+    DIST.mkdir(exist_ok=True)
 
     for name in ("index.html", ".nojekyll", "README.md", *LOCALES):
         copy_path(name)
